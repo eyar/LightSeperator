@@ -1,0 +1,1730 @@
+
+Settings:
+search_path:       . /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/minpower/syn /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/dw/syn_ver /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/dw/sim_ver ../LibraryFiles/db ./unmapped ./mapped ./scripts ./rtl ./.solutions
+link_library:      * slow.db dw_foundation.sldb
+target_library:    slow.db
+
+### Executing common setup file 'ref/dc_settings.tcl' ...
+Error: could not open script file "../ref/tools/procs.tcl" (CMD-015)
+
+
+I am ready...
+
+Initializing gui preferences from file  /users/agnon/year2011/eyarg/.synopsys_dv_prefs.tcl
+dc_shell> gui_start
+design_vision> source ./scripts/run_power_clock_gating.tcl
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/gtech.db'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:174: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:155: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:155: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:135: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:135: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:220: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:211: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:211: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 73 in file
+        '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            92            |     no/auto      |
+|           112            |    auto/auto     |
+|           124            |    auto/auto     |
+|           136            |    auto/auto     |
+|           138            |    auto/auto     |
+|           144            |    auto/auto     |
+|           156            |    auto/auto     |
+|           158            |    auto/auto     |
+|           164            |    auto/auto     |
+|           175            |    auto/auto     |
+|           177            |    auto/auto     |
+|           183            |    auto/auto     |
+|           193            |    auto/auto     |
+|           195            |    auto/auto     |
+|           201            |    auto/auto     |
+|           212            |    auto/auto     |
+|           221            |    auto/auto     |
+|           229            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine LightSeparator line 73 in file
+                '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      CTRL_reg       | Flip-flop |   2   |  N  | N  | Y  | N  | N  | N  | N  |
+|        i_reg        | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        j_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        k_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     apb_st_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     PRDATA_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ImOutput_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    picStore_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    picStore_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    picStore_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    picStore_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=============================================================
+|  block name/line   | Inputs | Outputs | # sel inputs | MB |
+=============================================================
+| LightSeparator/138 |   8    |    1    |      3       | N  |
+| LightSeparator/139 |   8    |   12    |      3       | N  |
+| LightSeparator/144 |   8    |    1    |      3       | N  |
+| LightSeparator/145 |   8    |   12    |      3       | N  |
+| LightSeparator/146 |   8    |   12    |      3       | N  |
+| LightSeparator/164 |   8    |    1    |      3       | N  |
+| LightSeparator/165 |   8    |   12    |      3       | N  |
+| LightSeparator/166 |   8    |   12    |      3       | N  |
+| LightSeparator/183 |   8    |    1    |      3       | N  |
+| LightSeparator/184 |   8    |   12    |      3       | N  |
+| LightSeparator/185 |   8    |   12    |      3       | N  |
+| LightSeparator/201 |   8    |    1    |      3       | N  |
+| LightSeparator/202 |   8    |   12    |      3       | N  |
+| LightSeparator/203 |   8    |   12    |      3       | N  |
+=============================================================
+Presto compilation completed successfully.
+Current design is now '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.db:LightSeparator'
+Loaded 1 design.
+Current design is 'LightSeparator'.
+Current design is 'LightSeparator'.
+
+  Linking design 'LightSeparator'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LightSeparator              /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.db
+  slow (library)              /users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db
+  dw_foundation.sldb (library) /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/dw_foundation.sldb
+
+Error: Cannot find the specified driving cell in memory.   (UID-993)
+Warning: Can't find port 'fibout' in design 'LightSeparator'. (UID-95)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+Warning: Can't find object 'reset' in design 'LightSeparator'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | J-2014.09-DWBB_201409.2 |     *     |
+| Licensed DW Building Blocks        | J-2014.09-DWBB_201409.2 |     *     |
+============================================================================
+
+
+Information: There are 29 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LightSeparator'
+Information: The register 'i_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'PRDATA_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'LightSeparator_DW01_inc_0'
+  Processing 'LightSeparator_DW01_inc_1'
+  Processing 'LightSeparator_DW01_sub_0'
+  Processing 'LightSeparator_DW01_add_0'
+  Mapping 'LightSeparator_DW_mult_uns_0'
+  Processing 'LightSeparator_DW01_add_1'
+  Mapping 'LightSeparator_DW_mult_uns_1'
+  Processing 'LightSeparator_DW01_sub_1'
+  Mapping 'LightSeparator_DW_mult_uns_2'
+  Processing 'LightSeparator_DW01_add_2'
+  Mapping 'LightSeparator_DW_mult_uns_3'
+  Processing 'LightSeparator_DW01_sub_2'
+  Mapping 'LightSeparator_DW_mult_uns_4'
+  Processing 'LightSeparator_DW01_add_3'
+  Mapping 'LightSeparator_DW_mult_uns_5'
+  Processing 'LightSeparator_DW01_sub_3'
+  Mapping 'LightSeparator_DW_mult_uns_6'
+  Processing 'LightSeparator_DW01_add_4'
+  Mapping 'LightSeparator_DW_mult_uns_7'
+  Processing 'LightSeparator_DW01_sub_4'
+  Mapping 'LightSeparator_DW_mult_uns_8'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: The register 'BankRegister_reg[4][0]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][1]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][2]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][3]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][4]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][5]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][6]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][7]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][8]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][9]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][10]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][11]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][0]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][1]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][2]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][3]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][4]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][5]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][6]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][7]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][8]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][9]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][10]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][11]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][0]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][1]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][2]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][3]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][4]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][5]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][6]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][7]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][8]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][9]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][10]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][11]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][0]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][1]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][2]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][3]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][4]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][5]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][6]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][7]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][8]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][9]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][10]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[7][11]' will be removed. (OPT-1207)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:30 4088930.2      5.52     372.6       0.3                          
+    0:00:31 4088930.2      5.52     372.6       0.3                          
+    0:00:31 4088930.2      5.52     372.6       0.3                          
+    0:00:31 4088860.4      5.52     372.5       0.3                          
+    0:00:31 4088860.4      5.52     372.5       0.3                          
+    0:00:34 3922360.5     17.62    1948.1       0.2                          
+    0:00:37 3926022.2     14.30    1447.4       0.2                          
+    0:00:39 3923740.8     14.52    1466.0       0.2                          
+    0:00:40 3924292.9     13.85    1411.3       0.2                          
+    0:00:41 3924043.5     13.13    1364.4       0.2                          
+    0:00:43 3925212.0     12.97    1324.9       0.2                          
+    0:00:43 3924869.4     12.80    1319.8       0.2                          
+    0:00:44 3925195.4     12.80    1309.9       0.2                          
+    0:00:45 3924749.1     12.72    1313.4       0.2                          
+    0:00:46 3926128.7     13.54    1307.1       0.2                          
+    0:00:46 3927034.9     12.65    1301.7       0.2                          
+    0:00:47 3927191.3     12.60    1299.8       0.2                          
+    0:00:48 3926371.0     12.31    1290.8       0.2                          
+    0:00:48 3926460.9     12.06    1281.0       0.2                          
+    0:00:50 3926967.0     12.02    1280.1       0.2                          
+    0:00:50 3928480.1     11.60    1274.0       0.2                          
+    0:00:51 3928753.3     11.46    1257.6       0.2                          
+    0:00:52 3929226.6     11.46    1256.3       0.2                          
+    0:00:53 3929326.4     11.35    1255.1       0.2                          
+    0:00:53 3929326.4     11.35    1255.1       0.2                          
+    0:00:53 3929326.4     11.35    1255.1       0.2                          
+    0:00:53 3929432.9     11.35    1255.1       0.0                          
+    0:00:53 3929432.9     11.35    1255.1       0.0                          
+    0:00:53 3929432.9     11.35    1255.1       0.0                          
+    0:00:53 3929432.9     11.35    1255.1       0.0                          
+    0:00:55 3927313.3     10.66    1187.3       0.0 picStore_reg[1][1][22]/D 
+    0:00:57 3926486.3     10.03    1122.1       0.0 picStore_reg[1][1][15]/D 
+    0:00:58 3923726.2      9.30    1056.5       0.0 picStore_reg[1][1][22]/D 
+    0:00:59 3925666.4      8.62    1011.4       0.0 picStore_reg[1][1][22]/D 
+    0:01:01 3928789.5      8.31     995.2       0.0 picStore_reg[1][1][22]/D 
+    0:01:02 3955937.0      7.92     959.5       0.0 picStore_reg[1][1][19]/D 
+    0:01:04 3977930.9      7.17     891.8       0.0 picStore_reg[1][1][21]/D 
+    0:01:06 3980941.8      6.63     843.1       0.0 picStore_reg[1][1][22]/D 
+    0:01:07 3983550.2      6.34     825.0       0.0 picStore_reg[1][1][21]/D 
+    0:01:09 3985572.6      6.13     807.2       0.0 picStore_reg[1][1][22]/D 
+    0:01:10 3987662.6      5.98     797.8       0.0 picStore_reg[1][1][22]/D 
+    0:01:11 3990189.8      5.85     787.8       0.0 picStore_reg[1][1][21]/D 
+    0:01:12 3991607.8      5.78     783.7       0.0 picStore_reg[1][1][22]/D 
+    0:01:12 3993326.2      5.70     779.0       0.0 picStore_reg[1][1][22]/D 
+    0:01:13 3995990.7      5.62     771.2       0.0                          
+    0:01:13 3998162.4      5.57     768.6       0.0                          
+    0:01:13 3999820.9      5.48     763.8       0.0                          
+    0:01:14 4001819.2      5.41     758.1       0.0                          
+    0:01:14 4004223.8      5.32     750.8       0.0                          
+    0:01:14 4006828.9      5.29     748.1       0.0                          
+    0:01:15 4008041.2      5.23     744.6       0.0                          
+    0:01:15 4007854.4      5.22     743.5       0.0                          
+    0:01:15 4009819.4      5.15     737.4       0.0                          
+    0:01:15 4011334.9      5.12     736.2       0.0                          
+    0:01:16 4012837.5      5.10     734.9       0.0                          
+    0:01:16 4014763.1      5.08     732.0       0.0                          
+    0:01:16 4016471.5      5.04     731.1       0.0                          
+    0:01:16 4018060.6      5.02     729.4       0.0                          
+    0:01:17 4020542.2      4.97     727.2       0.0                          
+    0:01:17 4021774.9      4.95     726.1       0.0                          
+    0:01:17 4022763.8      4.91     722.6       0.0                          
+    0:01:18 4024162.3      4.86     718.9       0.0                          
+    0:01:18 4025578.0      4.83     716.6       0.0                          
+    0:01:18 4027503.1      4.79     713.5       0.0                          
+    0:01:18 4028922.1      4.78     712.3       0.0                          
+    0:01:19 4029924.8      4.77     711.6       0.0                          
+    0:01:19 4029447.7      4.76     709.9       0.0                          
+    0:01:20 4030369.6      4.73     700.6       0.0                          
+    0:01:20 4032871.1      4.71     699.8       0.0                          
+    0:01:20 4033884.3      4.69     698.9       0.0                          
+    0:01:20 4035270.0      4.67     697.8       0.0                          
+    0:01:21 4035722.9      4.65     695.4       0.0                          
+    0:01:21 4036219.5      4.65     695.3       0.0                          
+    0:01:21 4037275.4      4.63     694.8       0.0                          
+    0:01:22 4037141.9      4.61     693.6       0.0                          
+    0:01:22 4036812.1      4.61     693.6       0.0                          
+    0:01:23 4037624.7      4.56     690.3       0.0                          
+    0:01:23 4038001.0      4.56     689.8       0.0                          
+    0:01:24 4039047.0      4.55     687.6       0.0                          
+    0:01:24 4039952.8      4.49     684.8       0.0                          
+    0:01:24 4040875.1      4.47     684.0       0.0                          
+    0:01:25 4041041.5      4.47     682.6       0.0                          
+    0:01:25 4042507.5      4.45     681.6       0.0                          
+    0:01:25 4041947.2      4.42     680.1       0.0                          
+    0:01:26 4042330.2      4.41     679.7       0.0                          
+    0:01:26 4043882.3      4.39     678.3       0.0                          
+    0:01:27 4043745.4      4.39     677.7       0.0                          
+    0:01:28 4044398.4      4.38     676.7       0.0                          
+    0:01:28 4045214.3      4.36     675.7       0.0                          
+    0:01:28 4045594.0      4.35     675.5       0.0                          
+    0:01:28 4047516.2      4.34     674.4       0.0                          
+    0:01:29 4047469.7      4.33     674.0       0.0                          
+    0:01:29 4047892.1      4.32     673.0       0.0                          
+    0:01:29 4048235.2      4.31     672.7       0.0                          
+    0:01:30 4048168.7      4.31     672.2       0.0                          
+    0:01:30 4050024.4      4.30     671.5       0.0                          
+    0:01:30 4050853.7      4.29     670.5       0.0                          
+    0:01:32 4051609.7      4.26     667.5       0.0                          
+    0:01:32 4052348.7      4.26     664.9       0.0                          
+    0:01:32 4053041.6      4.26     663.9       0.0                          
+    0:01:33 4053367.5      4.26     659.0       0.0                          
+    0:01:34 4053194.1      4.26     656.1       0.0                          
+    0:01:35 4053170.8      4.26     656.0       0.0                          
+    0:01:36 4053194.1      4.26     655.6       0.0                          
+    0:01:36 4053890.3      4.26     655.0       0.0                          
+    0:01:36 4055156.3      4.26     653.4       0.0                          
+    0:01:36 4055496.0      4.26     652.7       0.0                          
+    0:01:36 4055679.0      4.26     652.1       0.0                          
+    0:01:37 4056305.3      4.26     651.7       0.0                          
+    0:01:37 4057578.0      4.26     651.1       0.0                          
+    0:01:37 4058117.3      4.26     649.9       0.0                          
+    0:01:37 4058673.8      4.26     649.9       0.0                          
+    0:01:37 4058843.4      4.26     649.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:37 4058843.4      4.26     649.0       0.0                          
+    0:01:38 4058740.3      4.18     650.7       0.0 picStore_reg[0][1][19]/D 
+    0:01:38 4056607.5      4.16     648.4       0.0 picStore_reg[0][1][19]/D 
+    0:01:39 4057426.8      4.06     647.5       0.0 picStore_reg[1][0][20]/D 
+    0:01:39 4058216.6      4.04     646.9       0.0 picStore_reg[1][0][20]/D 
+    0:01:40 4059682.2      4.03     646.5       0.0 picStore_reg[0][1][21]/D 
+    0:01:40 4061621.6      4.02     646.0       0.0 picStore_reg[0][1][19]/D 
+    0:01:40 4061690.9      3.99     644.8       0.0 picStore_reg[1][0][20]/D 
+    0:01:41 4061710.9      3.99     644.8       0.0 picStore_reg[0][1][21]/D 
+    0:01:42 4061567.4      3.97     642.2       0.0 picStore_reg[1][0][22]/D 
+    0:01:42 4062556.8      3.96     641.9       0.0 picStore_reg[1][0][20]/D 
+    0:01:42 4063679.7      3.95     641.6       0.0 picStore_reg[1][0][22]/D 
+    0:01:43 4064402.5      3.94     640.9       0.0 picStore_reg[1][0][22]/D 
+    0:01:43 4064402.5      3.93     640.8       0.0 picStore_reg[0][1][18]/D 
+    0:01:44 4064241.9      3.92     583.3       0.0 picStore_reg[0][1][21]/D 
+    0:01:44 4064301.7      3.92     583.3       0.0 picStore_reg[1][0][22]/D 
+    0:01:44 4065304.4      3.92     583.1       0.0 picStore_reg[1][0][22]/D 
+    0:01:44 4066377.5      3.91     582.6       0.0 picStore_reg[1][0][22]/D 
+    0:01:45 4066677.4      3.90     582.1       0.0 picStore_reg[1][0][22]/D 
+    0:01:45 4066744.4      3.89     581.3       0.0 picStore_reg[1][0][22]/D 
+    0:01:46 4068426.6      3.87     579.9       0.0 picStore_reg[0][1][18]/D 
+    0:01:46 4068946.5      3.87     579.8       0.0 picStore_reg[1][0][22]/D 
+    0:01:46 4069753.0      3.86     579.2       0.0 picStore_reg[0][1][21]/D 
+    0:01:46 4070895.9      3.85     577.9       0.0 picStore_reg[1][0][22]/D 
+    0:01:47 4071235.7      3.85     577.7       0.0 picStore_reg[1][0][22]/D 
+    0:01:47 4071182.4      3.85     577.7       0.0 picStore_reg[0][1][21]/D 
+    0:01:47 4071558.8      3.85     577.1       0.0 picStore_reg[1][0][22]/D 
+    0:01:48 4072005.0      3.85     577.0       0.0 picStore_reg[1][0][22]/D 
+    0:01:48 4072701.2      3.84     576.4       0.0 picStore_reg[1][0][22]/D 
+    0:01:49 4072774.4      3.84     576.1       0.0 picStore_reg[0][1][21]/D 
+    0:01:49 4073440.6      3.83     575.9       0.0 picStore_reg[1][0][22]/D 
+    0:01:50 4073646.9      3.83     575.8       0.0 picStore_reg[1][0][22]/D 
+    0:01:51 4073986.7      3.83     575.7       0.0 picStore_reg[1][0][22]/D 
+    0:01:51 4074886.3      3.82     575.3       0.0 picStore_reg[0][1][19]/D 
+    0:01:51 4075179.5      3.81     575.1       0.0 picStore_reg[1][0][22]/D 
+    0:01:51 4075462.7      3.81     573.6       0.0 picStore_reg[0][1][18]/D 
+    0:01:52 4075109.6      3.81     573.0       0.0 picStore_reg[0][1][21]/D 
+    0:01:52 4074259.9      3.80     572.4       0.0 picStore_reg[0][1][21]/D 
+    0:01:52 4074649.6      3.79     571.8       0.0 picStore_reg[1][0][22]/D 
+    0:01:53 4074899.6      3.78     571.1       0.0 picStore_reg[1][0][22]/D 
+    0:01:53 4074719.4      3.77     570.9       0.0 picStore_reg[1][0][20]/D 
+    0:01:53 4074712.8      3.77     570.8       0.0 picStore_reg[0][1][18]/D 
+    0:01:54 4074302.7      3.77     569.8       0.0 picStore_reg[0][1][21]/D 
+    0:01:54 4074892.4      3.76     568.5       0.0 picStore_reg[1][0][20]/D 
+    0:01:54 4074839.2      3.76     568.1       0.0 picStore_reg[0][1][22]/D 
+    0:01:54 4075475.5      3.75     567.5       0.0 picStore_reg[0][1][20]/D 
+    0:01:55 4075475.5      3.75     567.6       0.0 picStore_reg[0][1][21]/D 
+    0:01:55 4077741.4      3.74     567.1       0.0 picStore_reg[0][1][22]/D 
+    0:01:55 4077208.2      3.74     566.5       0.0 picStore_reg[0][1][22]/D 
+    0:01:56 4079150.9      3.72     564.7       0.0 picStore_reg[0][1][23]/D 
+    0:01:56 4081002.8      3.71     564.8       0.0 picStore_reg[0][1][20]/D 
+    0:01:56 4081899.0      3.71     565.7       0.4 picStore_reg[0][1][22]/D 
+    0:01:57 4081875.7      3.71     565.5       0.4 picStore_reg[0][1][23]/D 
+    0:01:57 4082821.9      3.70     564.6       0.4 picStore_reg[0][1][18]/D 
+    0:01:58 4083161.7      3.69     564.4       0.4 picStore_reg[0][1][22]/D 
+    0:01:58 4083228.2      3.69     564.5       0.4 picStore_reg[0][1][22]/D 
+    0:01:58 4083415.0      3.69     564.3       0.4 picStore_reg[0][1][22]/D 
+    0:01:59 4084158.2      3.68     563.8       0.4 picStore_reg[0][1][18]/D 
+    0:01:59 4084551.2      3.67     561.2       0.4 picStore_reg[0][1][22]/D 
+    0:02:00 4085657.5      3.65     560.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:01 4085557.7      3.65     560.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:01 4085617.6      3.65     559.7       0.4 picStore_reg[0][1][23]/D 
+    0:02:01 4087223.9      3.64     559.5       0.4 picStore_reg[0][1][22]/D 
+    0:02:02 4088010.3      3.64     559.3       0.4 picStore_reg[0][1][19]/D 
+    0:02:02 4087733.8      3.63     559.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:02 4087813.6      3.63     557.2       0.4 picStore_reg[0][1][18]/D 
+    0:02:03 4089883.2      3.62     556.4       0.4 picStore_reg[0][1][22]/D 
+    0:02:03 4090796.1      3.61     556.2       0.4 picStore_reg[0][1][20]/D 
+    0:02:03 4091306.0      3.61     555.9       0.4 picStore_reg[0][1][18]/D 
+    0:02:04 4091632.5      3.61     556.4       0.4 picStore_reg[0][1][23]/D 
+    0:02:04 4091192.4      3.60     556.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:04 4091951.8      3.60     555.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:05 4092191.8      3.59     555.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:05 4092231.7      3.59     554.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:05 4094750.8      3.59     554.9       0.4 picStore_reg[0][1][23]/D 
+    0:02:06 4095370.5      3.59     554.2       0.4 picStore_reg[0][1][22]/D 
+    0:02:06 4094820.7      3.58     554.0       0.4 picStore_reg[0][1][21]/D 
+    0:02:06 4095799.6      3.58     553.3       0.4 picStore_reg[0][1][18]/D 
+    0:02:07 4095856.2      3.58     553.1       0.4 picStore_reg[0][1][18]/D 
+    0:02:07 4096896.0      3.57     552.9       0.4 picStore_reg[0][0][13]/D 
+    0:02:07 4097842.1      3.57     552.7       0.4 picStore_reg[1][1][23]/D 
+    0:02:07 4097455.8      3.56     551.6       0.4 picStore_reg[1][1][23]/D 
+    0:02:08 4098401.9      3.55     550.0       0.4 picStore_reg[1][1][23]/D 
+    0:02:08 4099761.5      3.54     549.6       0.4 picStore_reg[0][1][18]/D 
+    0:02:09 4100001.5      3.54     550.0       0.4 picStore_reg[1][1][23]/D 
+    0:02:09 4100094.7      3.54     549.8       0.4 picStore_reg[1][1][23]/D 
+    0:02:09 4100750.9      3.54     549.2       0.4 picStore_reg[1][1][23]/D 
+    0:02:09 4100681.1      3.53     549.3       0.4 picStore_reg[0][1][22]/D 
+    0:02:09 4101211.0      3.52     548.3       0.4 picStore_reg[0][1][22]/D 
+    0:02:10 4101883.9      3.52     548.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:10 4101920.5      3.51     548.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:10 4102923.6      3.51     547.7       0.4 picStore_reg[0][1][22]/D 
+    0:02:12 4103883.1      3.50     547.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:13 4104139.7      3.50     547.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:14 4104576.0      3.50     546.7       0.4 picStore_reg[1][1][14]/D 
+    0:02:14 4105315.4      3.49     546.1       0.4 picStore_reg[0][1][18]/D 
+    0:02:14 4106091.9      3.48     545.2       0.4 picStore_reg[0][1][18]/D 
+    0:02:14 4107681.5      3.47     545.2       0.4 picStore_reg[0][1][18]/D 
+    0:02:15 4108961.3      3.47     544.4       0.4 picStore_reg[0][1][18]/D 
+    0:02:15 4109267.8      3.46     544.1       0.4 picStore_reg[1][1][23]/D 
+    0:02:15 4109897.5      3.46     544.6       0.4 picStore_reg[0][1][18]/D 
+    0:02:15 4109604.3      3.46     544.6       0.4 picStore_reg[0][1][18]/D 
+    0:02:15 4109417.5      3.45     543.9       0.4 picStore_reg[1][1][23]/D 
+    0:02:16 4109430.8      3.45     543.8       0.4 picStore_reg[1][0][21]/D 
+    0:02:16 4110454.0      3.44     543.2       0.4 picStore_reg[0][1][18]/D 
+    0:02:16 4110777.1      3.44     542.4       0.4 picStore_reg[1][1][23]/D 
+    0:02:18 4110783.8      3.44     542.2       0.4 picStore_reg[1][1][23]/D 
+    0:02:18 4112896.1      3.43     541.8       0.4 picStore_reg[1][0][21]/D 
+    0:02:18 4113182.7      3.43     541.6       0.4 picStore_reg[1][1][23]/D 
+    0:02:19 4113235.9      3.42     541.3       0.4 picStore_reg[1][1][23]/D 
+    0:02:19 4114198.7      3.42     540.8       0.4 picStore_reg[0][1][18]/D 
+    0:02:19 4114608.3      3.41     540.5       0.4 picStore_reg[0][1][18]/D 
+    0:02:20 4114644.9      3.41     540.5       0.4 picStore_reg[1][1][23]/D 
+    0:02:20 4115228.0      3.40     540.2       0.4 picStore_reg[1][0][21]/D 
+    0:02:20 4116257.8      3.39     539.9       0.4 picStore_reg[1][1][23]/D 
+    0:02:22 4116297.7      3.39     539.6       0.4 picStore_reg[1][1][23]/D 
+    0:02:22 4116291.1      3.39     539.3       0.4 picStore_reg[1][1][23]/D 
+    0:02:23 4116251.6      3.38     538.8       0.4 picStore_reg[0][0][22]/D 
+    0:02:23 4116168.5      3.38     538.9       0.4 picStore_reg[1][1][14]/D 
+    0:02:23 4117531.4      3.38     538.8       0.4 picStore_reg[1][1][20]/D 
+    0:02:23 4117144.6      3.38     537.6       0.4 picStore_reg[0][0][18]/D 
+    0:02:24 4117411.2      3.37     537.6       0.4 picStore_reg[0][0][13]/D 
+    0:02:24 4118460.4      3.37     537.1       0.4 picStore_reg[0][0][22]/D 
+    0:02:24 4118643.4      3.36     536.4       0.4 picStore_reg[1][1][23]/D 
+    0:02:25 4118949.9      3.36     536.3       0.4 picStore_reg[1][1][23]/D 
+    0:02:25 4119203.2      3.35     536.2       0.4 picStore_reg[0][0][22]/D 
+    0:02:26 4119046.4      3.35     536.0       0.4 picStore_reg[0][0][22]/D 
+    0:02:26 4119213.2      3.35     536.0       0.4 picStore_reg[1][1][23]/D 
+    0:02:26 4120473.0      3.35     535.7       0.4 picStore_reg[0][0][22]/D 
+    0:02:26 4120782.8      3.34     535.7       0.4 picStore_reg[1][1][23]/D 
+    0:02:27 4121845.4      3.34     534.5       0.4 picStore_reg[0][1][23]/D 
+    0:02:27 4121675.3      3.33     534.3       0.4 picStore_reg[0][0][22]/D 
+    0:02:27 4122714.6      3.32     533.2       0.4 picStore_reg[1][1][21]/D 
+    0:02:27 4123551.0      3.32     533.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:28 4123614.2      3.32     532.8       0.4 picStore_reg[0][1][23]/D 
+    0:02:28 4124447.2      3.31     532.4       0.4 picStore_reg[1][1][21]/D 
+    0:02:28 4124523.7      3.31     532.2       0.4 picStore_reg[0][1][23]/D 
+    0:02:28 4125476.5      3.30     531.8       0.4 picStore_reg[0][1][23]/D 
+    0:02:29 4126019.7      3.30     532.1       0.4 picStore_reg[0][0][19]/D 
+    0:02:29 4126815.7      3.30     531.9       0.4 picStore_reg[0][1][23]/D 
+    0:02:29 4126805.7      3.30     531.8       0.4 picStore_reg[0][0][19]/D 
+    0:02:29 4127138.8      3.29     531.7       0.4 picStore_reg[0][0][19]/D 
+    0:02:31 4128824.9      3.29     531.4       0.4 picStore_reg[1][0][22]/D 
+    0:02:31 4130481.1      3.29     531.1       0.4 picStore_reg[0][1][13]/D 
+    0:02:31 4131403.9      3.28     530.6       0.4 picStore_reg[1][1][20]/D 
+    0:02:31 4133552.9      3.27     530.3       0.4 picStore_reg[1][0][13]/D 
+    0:02:32 4134175.9      3.27     530.1       0.4 picStore_reg[0][1][23]/D 
+    0:02:32 4134209.1      3.27     529.9       0.4 picStore_reg[0][1][14]/D 
+    0:02:32 4135762.2      3.26     529.8       0.4 picStore_reg[1][0][22]/D 
+    0:02:33 4137531.4      3.26     529.1       0.4 picStore_reg[1][1][15]/D 
+    0:02:33 4137111.3      3.25     528.8       0.4 picStore_reg[0][1][23]/D 
+    0:02:33 4138163.9      3.25     528.4       0.4 picStore_reg[0][0][19]/D 
+    0:02:33 4138713.7      3.25     528.2       0.4 picStore_reg[0][1][23]/D 
+    0:02:33 4140103.8      3.24     528.2       0.4 picStore_reg[1][0][22]/D 
+    0:02:33 4140896.4      3.23     527.6       0.4 picStore_reg[1][1][15]/D 
+    0:02:33 4141862.5      3.23     527.3       0.4 picStore_reg[0][0][19]/D 
+    0:02:34 4142265.5      3.23     527.1       0.4 picStore_reg[1][0][22]/D 
+    0:02:34 4145930.4      3.22     526.8       0.4 picStore_reg[0][1][22]/D 
+    0:02:35 4147752.8      3.21     526.4       0.4 picStore_reg[0][1][23]/D 
+    0:02:35 4147309.5      3.21     526.3       0.4 picStore_reg[0][0][19]/D 
+    0:02:35 4147292.8      3.21     526.3       0.4 picStore_reg[0][1][22]/D 
+    0:02:36 4148162.5      3.21     525.9       0.4 picStore_reg[0][0][19]/D 
+    0:02:36 4148155.8      3.21     525.9       0.4 picStore_reg[0][0][19]/D 
+    0:02:36 4148062.2      3.20     525.8       0.4 picStore_reg[0][0][19]/D 
+    0:02:37 4148075.5      3.20     525.8       0.4 picStore_reg[0][0][19]/D 
+    0:02:37 4148695.2      3.20     525.6       0.4 picStore_reg[0][1][23]/D 
+    0:02:37 4149658.0      3.20     525.4       0.4 picStore_reg[1][1][21]/D 
+    0:02:37 4150484.4      3.20     525.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:37 4152034.1      3.19     525.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:37 4152970.3      3.19     524.6       0.4 picStore_reg[0][1][22]/D 
+    0:02:38 4153729.7      3.18     524.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:38 4156308.7      3.18     524.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:39 4156525.4      3.18     524.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:39 4156562.0      3.17     524.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:39 4158571.2      3.17     523.7       0.4 picStore_reg[0][1][23]/D 
+    0:02:40 4159534.0      3.17     522.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:40 4160363.7      3.17     518.8       0.4 picStore_reg[0][0][19]/D 
+    0:02:40 4161700.0      3.16     518.5       0.4 picStore_reg[0][1][22]/D 
+    0:02:40 4162919.4      3.16     518.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:41 4166091.0      3.16     518.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:41 4166237.4      3.15     518.0       0.4 picStore_reg[1][1][15]/D 
+    0:02:41 4167333.7      3.15     517.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:41 4167593.7      3.15     517.7       0.4 picStore_reg[0][1][22]/D 
+    0:02:42 4168296.5      3.14     517.3       0.4 picStore_reg[0][1][22]/D 
+    0:02:43 4168416.3      3.14     517.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:43 4170422.2      3.13     516.8       0.4 picStore_reg[0][1][22]/D 
+    0:02:43 4171621.6      3.13     516.7       0.4 picStore_reg[0][1][23]/D 
+    0:02:43 4173040.6      3.13     515.5       0.4 picStore_reg[0][1][22]/D 
+    0:02:44 4173793.8      3.13     515.4       0.4 picStore_reg[0][0][19]/D 
+    0:02:44 4174523.3      3.12     515.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:45 4175003.3      3.12     514.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:45 4175023.2      3.12     514.7       0.4 picStore_reg[0][1][22]/D 
+    0:02:46 4175606.3      3.12     514.1       0.4 picStore_reg[0][0][19]/D 
+    0:02:46 4176285.9      3.12     514.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:47 4177062.4      3.11     513.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:47 4177355.6      3.11     514.5       0.4 picStore_reg[0][1][22]/D 
+    0:02:47 4179265.0      3.11     514.1       0.4 picStore_reg[1][1][20]/D 
+    0:02:47 4179804.9      3.11     514.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:47 4181384.5      3.10     513.6       0.4 picStore_reg[0][1][22]/D 
+    0:02:48 4182510.8      3.10     513.6       0.4 picStore_reg[0][1][22]/D 
+    0:02:48 4182840.6      3.10     513.3       0.4 picStore_reg[0][1][22]/D 
+    0:02:49 4182613.9      3.09     513.2       0.4 picStore_reg[0][1][23]/D 
+    0:02:49 4182907.1      3.09     513.2       0.4 picStore_reg[0][1][23]/D 
+    0:02:50 4183230.2      3.09     513.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:50 4184373.1      3.09     513.1       0.4 picStore_reg[0][1][22]/D 
+    0:02:50 4185002.8      3.09     512.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:51 4188118.3      3.08     513.8       0.4 picStore_reg[0][1][22]/D 
+    0:02:51 4189700.8      3.08     513.8       0.4 picStore_reg[0][1][22]/D 
+    0:02:51 4190463.5      3.08     513.6       0.4 picStore_reg[0][1][22]/D 
+    0:02:51 4190220.2      3.07     513.4       0.4 picStore_reg[0][1][23]/D 
+    0:02:51 4191426.3      3.07     513.0       0.4 picStore_reg[0][1][23]/D 
+    0:02:52 4191086.6      3.07     512.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:52 4191079.9      3.07     512.9       0.4 picStore_reg[0][1][22]/D 
+    0:02:52 4191482.9      3.07     512.5       0.4 picStore_reg[0][1][23]/D 
+    0:02:53 4191855.9      3.06     512.0       0.4 picStore_reg[0][1][22]/D 
+    0:02:53 4193008.8      3.05     511.8       0.4 picStore_reg[0][1][22]/D 
+    0:02:54 4193648.4      3.05     511.7       0.4 picStore_reg[1][1][21]/D 
+    0:02:54 4194834.6      3.05     511.2       0.4 picStore_reg[0][1][22]/D 
+    0:02:54 4195301.3      3.05     511.2       0.4 picStore_reg[1][1][21]/D 
+    0:02:54 4196050.7      3.04     510.5       0.4 picStore_reg[0][1][22]/D 
+    0:02:54 4196304.0      3.04     510.4       0.4 picStore_reg[0][1][18]/D 
+    0:02:55 4196850.5      3.04     510.4       0.4                          
+    0:02:55 4196764.0      3.04     510.4       0.4 picStore_reg[1][1][21]/D 
+    0:02:56 4196987.3      3.04     509.9       0.4 picStore_reg[1][1][20]/D 
+    0:02:57 4196960.7      3.04     509.7       0.4                          
+    0:02:57 4191911.5      3.04     518.8       0.4                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:57 4191911.5      3.04     518.8       0.4                          
+    0:02:58 4191948.1      3.03     516.6       0.0 picStore_reg[1][0][22]/D 
+    0:02:58 4191938.1      3.03     516.5       0.0 picStore_reg[1][0][23]/D 
+    0:02:58 4192458.0      3.03     516.5       0.0 picStore_reg[1][0][23]/D 
+    0:02:59 4192537.8      3.03     516.5       0.0 picStore_reg[1][0][22]/D 
+    0:02:59 4192507.9      3.03     516.4       0.0 picStore_reg[1][0][22]/D 
+    0:02:59 4192194.7      3.03     515.9       0.0 picStore_reg[1][0][22]/D 
+    0:03:00 4193051.6      3.03     515.7       0.0 picStore_reg[1][0][22]/D 
+    0:03:00 4193298.2      3.03     515.7       0.0 picStore_reg[1][0][22]/D 
+    0:03:00 4193858.0      3.03     515.6       0.0 picStore_reg[1][1][21]/D 
+    0:03:00 4193881.3      3.02     515.6       0.0 picStore_reg[1][0][22]/D 
+    0:03:02 4193937.8      3.02     515.5       0.0 picStore_reg[1][0][22]/D 
+    0:03:02 4194461.1      3.02     515.4       0.0 picStore_reg[1][0][22]/D 
+    0:03:03 4194514.3      3.02     515.3       0.0 picStore_reg[1][0][22]/D 
+    0:03:03 4194860.7      3.01     515.0       0.0 picStore_reg[1][0][22]/D 
+    0:03:04 4195817.3      3.01     515.7       0.0 picStore_reg[0][1][18]/D 
+    0:03:04 4195973.7      3.01     515.2       0.0 picStore_reg[0][1][18]/D 
+    0:03:04 4196023.6      3.01     514.8       0.0 picStore_reg[1][0][22]/D 
+    0:03:04 4196496.9      3.00     514.6       0.0 picStore_reg[1][1][21]/D 
+    0:03:04 4197373.2      3.00     514.2       0.0 picStore_reg[1][1][21]/D 
+    0:03:05 4197396.5      2.99     514.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:05 4197826.1      2.99     513.7       0.0 picStore_reg[1][1][20]/D 
+    0:03:05 4197856.0      2.99     513.8       0.0 picStore_reg[1][0][22]/D 
+    0:03:05 4198195.8      2.98     513.7       0.0 picStore_reg[0][1][17]/D 
+    0:03:06 4198142.6      2.98     513.6       0.0 picStore_reg[1][1][20]/D 
+    0:03:07 4198689.1      2.98     513.6       0.0 picStore_reg[1][1][20]/D 
+    0:03:07 4198762.3      2.98     513.5       0.0 picStore_reg[1][0][22]/D 
+    0:03:07 4198755.6      2.97     512.4       0.0 picStore_reg[1][0][22]/D 
+    0:03:08 4199221.8      2.97     512.2       0.0 picStore_reg[1][1][20]/D 
+    0:03:08 4199651.4      2.97     512.1       0.0 picStore_reg[1][0][22]/D 
+    0:03:08 4199924.6      2.97     511.7       0.0 picStore_reg[0][1][18]/D 
+    0:03:08 4199491.7      2.96     511.6       0.0 picStore_reg[1][1][20]/D 
+    0:03:09 4200044.9      2.96     511.5       0.0 picStore_reg[1][1][21]/D 
+    0:03:09 4200574.7      2.96     511.4       0.0 picStore_reg[1][1][20]/D 
+    0:03:09 4201251.5      2.96     511.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:09 4201181.6      2.96     511.2       0.0 picStore_reg[1][1][20]/D 
+    0:03:09 4202934.2      2.95     511.3       0.0 picStore_reg[1][0][22]/D 
+    0:03:09 4202584.5      2.95     511.2       0.0 picStore_reg[1][0][22]/D 
+    0:03:10 4202904.3      2.95     511.2       0.0 picStore_reg[1][0][22]/D 
+    0:03:10 4204080.4      2.95     511.2       0.0 picStore_reg[1][0][22]/D 
+    0:03:10 4204700.1      2.95     510.5       0.0 picStore_reg[1][0][22]/D 
+    0:03:10 4205006.6      2.95     510.6       0.0 picStore_reg[1][1][20]/D 
+    0:03:11 4205533.2      2.95     510.6       0.0 picStore_reg[1][1][20]/D 
+    0:03:11 4205746.6      2.94     510.3       0.0 picStore_reg[1][0][22]/D 
+    0:03:11 4206662.8      2.94     511.6       0.0 picStore_reg[1][0][22]/D 
+    0:03:12 4206396.2      2.94     511.5       0.0 picStore_reg[1][1][20]/D 
+    0:03:12 4207412.7      2.94     511.4       0.0 picStore_reg[1][0][22]/D 
+    0:03:12 4206976.4      2.94     511.1       0.0 picStore_reg[1][0][22]/D 
+    0:03:12 4207296.3      2.93     511.1       0.0 picStore_reg[1][1][20]/D 
+    0:03:12 4207932.6      2.93     511.0       0.0 picStore_reg[0][1][14]/D 
+    0:03:13 4208145.5      2.93     511.1       0.0 picStore_reg[1][1][21]/D 
+    0:03:13 4208502.4      2.93     511.1       0.0 picStore_reg[1][0][22]/D 
+    0:03:13 4208648.7      2.92     510.8       0.0 picStore_reg[0][1][18]/D 
+    0:03:13 4208468.6      2.92     510.4       0.0 picStore_reg[1][1][21]/D 
+    0:03:13 4208698.6      2.91     510.4       0.0 picStore_reg[1][1][21]/D 
+    0:03:13 4210144.7      2.91     510.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:14 4210441.2      2.91     510.8       0.0 picStore_reg[1][1][20]/D 
+    0:03:14 4211137.4      2.91     510.5       0.0 picStore_reg[1][1][20]/D 
+    0:03:15 4211517.1      2.90     510.3       0.0 picStore_reg[0][1][18]/D 
+    0:03:15 4212037.0      2.90     510.2       0.0 picStore_reg[0][1][21]/D 
+    0:03:15 4211790.4      2.90     510.1       0.0 picStore_reg[0][1][20]/D 
+    0:03:15 4211836.9      2.90     510.1       0.0 picStore_reg[0][1][21]/D 
+    0:03:16 4211680.6      2.89     510.0       0.0 picStore_reg[0][1][20]/D 
+    0:03:16 4211803.7      2.89     507.7       0.0 picStore_reg[0][1][20]/D 
+    0:03:16 4211823.6      2.89     507.6       0.0 picStore_reg[0][1][20]/D 
+    0:03:17 4211846.9      2.89     507.5       0.0 picStore_reg[0][1][20]/D 
+    0:03:17 4212656.7      2.89     507.3       0.0 picStore_reg[0][1][20]/D 
+    0:03:17 4213029.7      2.88     507.2       0.0 picStore_reg[0][1][20]/D 
+    0:03:17 4213326.3      2.88     507.1       0.0 picStore_reg[0][1][20]/D 
+    0:03:18 4213392.8      2.88     506.1       0.0 picStore_reg[0][1][20]/D 
+    0:03:18 4213039.7      2.88     506.1       0.0 picStore_reg[0][1][20]/D 
+    0:03:18 4213975.9      2.87     505.8       0.0 picStore_reg[0][1][20]/D 
+    0:03:18 4213949.8      2.87     505.6       0.0 picStore_reg[0][1][20]/D 
+    0:03:19 4214426.4      2.87     505.6       0.0 picStore_reg[0][1][20]/D 
+    0:03:19 4214709.7      2.87     505.6       0.0 picStore_reg[0][1][18]/D 
+    0:03:19 4214639.8      2.87     505.5       0.0 picStore_reg[0][1][20]/D 
+    0:03:19 4214666.4      2.86     505.4       0.0 picStore_reg[0][1][20]/D 
+    0:03:20 4214943.0      2.86     505.2       0.0 picStore_reg[0][1][18]/D 
+    0:03:20 4214489.6      2.86     505.4       0.0 picStore_reg[1][1][21]/D 
+    0:03:20 4214016.3      2.86     505.3       0.0 picStore_reg[0][1][21]/D 
+    0:03:20 4213956.4      2.86     505.3       0.0 picStore_reg[0][1][21]/D 
+    0:03:20 4214199.7      2.86     505.2       0.0 picStore_reg[1][1][20]/D 
+    0:03:20 4214579.4      2.86     505.2       0.0 picStore_reg[1][1][20]/D 
+    0:03:21 4216072.1      2.85     504.5       0.0 picStore_reg[1][1][21]/D 
+    0:03:21 4216975.0      2.85     504.4       0.0 picStore_reg[0][1][16]/D 
+    0:03:21 4217314.8      2.85     495.7       0.0 picStore_reg[1][1][20]/D 
+    0:03:21 4217921.7      2.85     495.1       0.0 picStore_reg[1][1][20]/D 
+    0:03:21 4217844.7      2.85     495.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:22 4217578.1      2.85     495.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:22 4218434.4      2.85     495.3       0.0 picStore_reg[1][1][21]/D 
+    0:03:22 4218750.9      2.85     495.2       0.0 picStore_reg[0][1][21]/D 
+    0:03:22 4219054.1      2.84     495.1       0.0 picStore_reg[1][1][21]/D 
+    0:03:22 4219057.4      2.84     495.2       0.0 picStore_reg[1][1][21]/D 
+    0:03:24 4219050.8      2.84     495.2       0.0 picStore_reg[1][1][20]/D 
+    0:03:24 4219410.5      2.84     495.2       0.0 picStore_reg[1][1][21]/D 
+    0:03:24 4220083.4      2.84     495.0       0.0 picStore_reg[1][1][21]/D 
+    0:03:25 4220496.4      2.84     493.8       0.0 picStore_reg[1][1][20]/D 
+    0:03:25 4220906.0      2.83     493.8       0.0 picStore_reg[1][1][21]/D 
+    0:03:25 4220982.5      2.83     493.7       0.0 picStore_reg[1][1][20]/D 
+    0:03:26 4221495.8      2.83     493.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:26 4221475.8      2.83     493.3       0.0 picStore_reg[1][1][20]/D 
+    0:03:27 4221822.2      2.83     493.3       0.0 picStore_reg[0][1][21]/D 
+    0:03:27 4222738.4      2.83     493.3       0.0 picStore_reg[0][1][21]/D 
+    0:03:27 4223228.4      2.83     493.5       0.0 picStore_reg[0][1][21]/D 
+    0:03:27 4224201.2      2.82     493.4       0.0 picStore_reg[1][0][16]/D 
+    0:03:28 4224834.2      2.82     493.4       0.0 picStore_reg[1][0][16]/D 
+    0:03:29 4224907.3      2.82     493.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:32 4224850.8      2.82     492.8       0.0 picStore_reg[0][1][21]/D 
+    0:03:32 4224850.8      2.82     492.8       0.0 picStore_reg[0][1][21]/D 
+    0:03:32 4225294.2      2.82     492.8       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4226020.8      2.82     492.7       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4226280.7      2.82     492.6       0.0 picStore_reg[0][1][18]/D 
+    0:03:33 4226230.8      2.82     492.6       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4226510.7      2.81     492.6       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4226750.7      2.81     492.8       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4228070.4      2.81     492.7       0.0 picStore_reg[0][1][21]/D 
+    0:03:33 4228070.4      2.81     492.7       0.0 picStore_reg[0][1][21]/D 
+    0:03:34 4228396.9      2.81     492.6       0.0 picStore_reg[0][1][21]/D 
+    0:03:34 4229713.3      2.81     492.5       0.0 picStore_reg[0][1][21]/D 
+    0:03:34 4229683.3      2.81     492.5       0.0 picStore_reg[0][1][21]/D 
+    0:03:34 4229683.3      2.81     492.5       0.0 picStore_reg[0][1][23]/D 
+    0:03:35 4229783.1      2.81     492.5       0.0 picStore_reg[0][1][21]/D 
+    0:03:35 4229450.0      2.81     492.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:37 4229450.0      2.81     492.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:39 4230112.9      2.80     492.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:39 4230109.6      2.80     492.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:42 4230102.9      2.80     492.4       0.0 picStore_reg[0][1][21]/D 
+    0:03:42 4230339.6      2.80     492.4       0.0                          
+    0:03:42 4230599.5      2.80     492.3       0.0                          
+    0:03:43 4230912.7      2.80     492.3       0.0                          
+    0:03:43 4230912.7      2.80     492.3       0.0                          
+    0:03:43 4230955.9      2.80     492.3       0.0                          
+    0:03:43 4231826.1      2.80     492.4       0.0                          
+    0:03:43 4232479.0      2.80     492.4       0.0                          
+    0:03:43 4233278.8      2.80     492.1       0.0                          
+    0:03:44 4233255.5      2.80     492.1       0.0                          
+    0:03:44 4234668.4      2.80     492.1       0.0                          
+    0:03:44 4234302.0      2.79     492.1       0.0                          
+    0:03:44 4234351.9      2.79     492.0       0.0                          
+    0:03:45 4234688.3      2.79     491.7       0.0                          
+    0:03:45 4234981.5      2.79     491.6       0.0                          
+    0:03:45 4235727.6      2.79     491.3       0.0                          
+    0:03:45 4236474.2      2.79     491.2       0.0                          
+    0:03:45 4236234.2      2.79     491.2       0.0                          
+    0:03:45 4236234.2      2.79     491.2       0.0                          
+    0:03:45 4236497.5      2.79     491.1       0.0                          
+    0:03:46 4236847.2      2.79     490.9       0.0                          
+    0:03:46 4236160.5      2.79     490.9       0.0                          
+    0:03:46 4236100.7      2.79     490.9       0.0                          
+    0:03:46 4236673.8      2.79     490.8       0.0                          
+    0:03:47 4236543.6      2.79     490.4       0.0                          
+    0:03:47 4237579.5      2.79     490.3       0.0                          
+    0:03:48 4237912.7      2.79     489.9       0.0                          
+    0:03:48 4238539.0      2.79     489.6       0.0                          
+    0:03:48 4238885.4      2.79     489.6       0.0                          
+    0:03:48 4239518.4      2.79     489.4       0.0                          
+    0:03:48 4239848.2      2.79     489.4       0.0                          
+    0:03:49 4239428.1      2.79     487.3       0.0                          
+    0:03:50 4239195.3      2.79     487.2       0.0                          
+    0:03:51 4238805.1      2.79     486.9       0.0                          
+    0:03:51 4239025.1      2.79     485.7       0.0                          
+    0:03:51 4239151.5      2.79     485.1       0.0                          
+    0:03:51 4239238.0      2.79     484.7       0.0                          
+    0:03:51 4239041.3      2.79     484.6       0.0                          
+    0:03:52 4239077.9      2.79     482.2       0.0                          
+    0:03:52 4239960.8      2.79     481.3       0.0                          
+    0:03:52 4240560.5      2.79     480.3       0.0                          
+    0:03:53 4240926.9      2.79     480.0       0.0                          
+    0:03:53 4241700.1      2.79     477.6       0.0                          
+    0:03:53 4242289.9      2.79     477.0       0.0                          
+    0:03:53 4244375.6      2.79     256.2       0.0                          
+    0:03:53 4244718.7      2.79     255.3       0.0                          
+    0:03:53 4246670.9      2.79     254.6       0.0                          
+    0:03:53 4246694.2      2.79     254.6       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:03:53 4246694.2      2.79     254.6       0.0                          
+    0:03:53 4246694.2      2.79     254.6       0.0                          
+    0:03:54 4186920.7      2.89     240.8       0.0                          
+    0:03:55 4159968.1      2.89     238.9       0.0                          
+    0:03:55 4146915.7      2.89     238.6       0.0                          
+    0:03:55 4141990.0      2.89     238.6       0.0                          
+    0:03:56 4138574.1      2.89     238.3       0.0                          
+    0:03:56 4135735.2      2.89     238.3       0.0                          
+    0:03:56 4133532.6      2.89     238.3       0.0                          
+    0:03:56 4132669.6      2.89     238.3       0.0                          
+    0:03:56 4132049.9      2.89     238.3       0.0                          
+    0:03:56 4131426.9      2.89     238.3       0.0                          
+    0:03:56 4130600.5      2.89     238.3       0.0                          
+    0:03:56 4130107.2      2.89     238.2       0.0                          
+    0:03:56 4129600.6      2.89     238.2       0.0                          
+    0:03:56 4129347.3      2.89     238.2       0.0                          
+    0:03:57 4129094.0      2.89     238.3       0.0                          
+    0:03:57 4128764.2      2.90     238.5       0.0                          
+    0:03:57 4128764.2      2.90     238.5       0.0                          
+    0:03:58 4128570.8      2.85     239.3       0.0 picStore_reg[0][1][21]/D 
+    0:03:58 4129689.9      2.82     237.5       0.0 picStore_reg[0][1][21]/D 
+    0:03:59 4129703.2      2.81     234.7       0.0 picStore_reg[1][1][20]/D 
+    0:03:59 4129416.7      2.81     234.7       0.0                          
+    0:04:00 4115828.3      3.89     339.6       0.0                          
+    0:04:00 4113060.8      4.92     414.8       0.0                          
+    0:04:00 4112205.9      4.92     414.8       0.0                          
+    0:04:00 4112195.9      4.92     414.8       0.0                          
+    0:04:01 4112195.9      4.92     414.8       0.0                          
+    0:04:01 4112195.9      4.92     414.8       0.0                          
+    0:04:01 4112195.9      4.92     414.8       0.0                          
+    0:04:01 4112195.9      4.92     414.8       0.0                          
+    0:04:02 4112375.0      2.84     288.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:03 4114983.0      2.81     286.9       0.0 picStore_reg[0][1][21]/D 
+    0:04:03 4115552.8      2.80     286.6       0.0                          
+    0:04:03 4117365.8      2.80     287.0       0.0                          
+    0:04:03 4117359.1      2.79     287.0       0.0                          
+    0:04:03 4117615.7      2.79     286.7       0.0                          
+    0:04:04 4117695.6      2.79     286.7       0.0                          
+    0:04:05 4117975.5      2.79     286.7       0.0                          
+    0:04:05 4117945.5      2.78     286.8       0.0                          
+    0:04:05 4118285.3      2.78     286.6       0.0                          
+    0:04:06 4118655.0      2.78     286.0       0.0                          
+    0:04:06 4120008.0      2.78     286.2       0.0                          
+    0:04:06 4121790.5      2.77     286.2       0.0                          
+    0:04:06 4122330.4      2.77     286.2       0.0                          
+    0:04:06 4122923.5      2.77     286.1       0.0                          
+    0:04:07 4123456.7      2.77     286.0       0.0                          
+    0:04:07 4123809.7      2.77     286.0       0.0                          
+    0:04:07 4124962.6      2.77     286.0       0.0                          
+    0:04:07 4125349.0      2.76     286.4       0.0                          
+    0:04:09 4126375.4      2.76     286.4       0.0                          
+    0:04:10 4126645.4      2.76     286.4       0.0                          
+    0:04:10 4126425.3      2.76     286.4       0.0                          
+    0:04:10 4126378.8      2.76     286.3       0.0                          
+    0:04:10 4126682.0      2.76     286.2       0.0                          
+    0:04:10 4126708.6      2.76     286.2       0.0                          
+    0:04:11 4127291.7      2.76     285.9       0.0                          
+    0:04:11 4127631.4      2.76     285.8       0.0                          
+    0:04:11 4128007.8      2.76     285.7       0.0                          
+    0:04:11 4128077.7      2.76     285.7       0.0                          
+    0:04:12 4128704.0      2.76     285.5       0.0                          
+    0:04:12 4128704.0      2.76     285.5       0.0                          
+    0:04:12 4128680.7      2.76     284.9       0.0                          
+    0:04:12 4127954.1      2.76     284.7       0.0                          
+    0:04:12 4128340.5      2.76     284.6       0.0                          
+    0:04:13 4129170.2      2.76     286.3       0.0                          
+    0:04:13 4129176.8      2.76     286.3       0.0                          
+    0:04:13 4129746.6      2.76     286.2       0.0                          
+    0:04:13 4130732.7      2.76     285.9       0.0                          
+    0:04:13 4132355.1      2.76     285.8       0.0                          
+    0:04:14 4132361.7      2.76     285.8       0.0                          
+    0:04:14 4132381.7      2.76     285.8       0.0                          
+    0:04:15 4132738.1      2.76     285.7       0.0                          
+    0:04:15 4132731.5      2.76     285.5       0.0                          
+    0:04:15 4133111.2      2.76     284.6       0.0                          
+    0:04:16 4133084.6      2.76     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:16 4133631.1      2.76     284.3       0.0 picStore_reg[0][1][21]/D 
+    0:04:16 4133631.1      2.76     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:16 4134903.7      2.75     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:18 4134936.9      2.75     284.7       0.0 picStore_reg[1][1][20]/D 
+    0:04:18 4135962.9      2.75     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:19 4135476.3      2.75     284.6       0.0 picStore_reg[0][1][20]/D 
+    0:04:20 4135476.3      2.75     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:20 4135476.3      2.75     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:21 4135486.3      2.75     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:21 4135516.2      2.75     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:22 4135253.0      2.75     284.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:22 4135272.9      2.75     284.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:22 4135812.8      2.74     284.4       0.0 picStore_reg[0][1][21]/D 
+    0:04:22 4136755.6      2.74     284.5       0.0 picStore_reg[0][0][22]/D 
+    0:04:23 4137755.5      2.74     284.7       0.0 picStore_reg[0][0][23]/D 
+    0:04:23 4138022.1      2.74     284.7       0.0 picStore_reg[0][0][22]/D 
+    0:04:23 4138621.8      2.74     284.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:24 4139274.7      2.73     284.3       0.0 picStore_reg[0][1][21]/D 
+    0:04:24 4139704.3      2.73     284.2       0.0 picStore_reg[0][0][23]/D 
+    0:04:24 4139684.4      2.73     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:24 4139677.7      2.73     284.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:24 4140454.2      2.73     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:25 4140510.8      2.72     284.9       0.0 picStore_reg[0][1][21]/D 
+    0:04:25 4141007.4      2.72     284.9       0.0 picStore_reg[0][1][21]/D 
+    0:04:25 4141477.4      2.72     284.9       0.0 picStore_reg[0][0][22]/D 
+    0:04:25 4141460.7      2.72     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:25 4142500.0      2.72     284.7       0.0 picStore_reg[0][0][23]/D 
+    0:04:26 4142486.7      2.72     284.7       0.0 picStore_reg[1][1][20]/D 
+    0:04:26 4142836.5      2.72     284.7       0.0 picStore_reg[0][1][21]/D 
+    0:04:27 4142543.3      2.72     284.3       0.0 picStore_reg[1][1][20]/D 
+    0:04:27 4142543.3      2.72     284.3       0.0 picStore_reg[0][1][21]/D 
+    0:04:28 4142569.9      2.72     284.3       0.0 picStore_reg[0][1][21]/D 
+    0:04:28 4142806.6      2.71     284.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:28 4143666.2      2.71     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:29 4145392.2      2.71     284.7       0.0 picStore_reg[0][0][22]/D 
+    0:04:29 4146528.5      2.71     285.2       0.0 picStore_reg[1][0][20]/D 
+    0:04:30 4146815.0      2.71     285.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:30 4147887.6      2.71     284.8       0.0 picStore_reg[0][0][22]/D 
+    0:04:30 4147880.9      2.71     284.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:31 4148694.0      2.70     284.5       0.0 picStore_reg[0][1][18]/D 
+    0:04:31 4148957.3      2.70     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:34 4148950.7      2.70     284.6       0.0 picStore_reg[0][1][21]/D 
+    0:04:34 4148720.6      2.70     284.6       0.0                          
+    0:04:35 4147970.7      2.70     284.5       0.0                          
+    0:04:35 4146480.9      2.70     282.5       0.0                          
+    0:04:35 4145371.3      2.70     282.5       0.0                          
+    0:04:35 4144268.3      2.70     282.4       0.0                          
+    0:04:35 4143741.8      2.70     282.4       0.0                          
+    0:04:35 4142951.9      2.70     282.4       0.0                          
+    0:04:35 4140765.4      2.70     281.9       0.0                          
+    0:04:36 4136922.8      2.70     281.9       0.0                          
+    0:04:37 4125110.7      2.70     281.5       0.0                          
+    0:04:38 4113915.4      2.70     281.2       0.0                          
+    0:04:39 4106809.9      2.70     280.8       0.0                          
+    0:04:39 4095322.4      2.70     280.8       0.0                          
+    0:04:39 4082675.4      2.70     280.8       0.0                          
+    0:04:39 4078517.2      2.70     265.5       0.0                          
+    0:04:40 4073555.0      2.70     264.8       0.0                          
+    0:04:40 4071105.7      2.70     264.8       0.0                          
+    0:04:40 4065367.9      2.70     264.7       0.0                          
+    0:04:41 4056147.2      2.70     264.7       0.0                          
+    0:04:41 4047275.8      2.70     264.7       0.0                          
+    0:04:42 4047012.5      2.70     264.7       0.0                          
+    0:04:42 4044859.8      2.70     264.7       0.0                          
+    0:04:42 4042037.0      2.70     264.7       0.0                          
+    0:04:43 4036974.9      2.70     264.7       0.0                          
+    0:04:43 4036974.9      2.70     264.7       0.0                          
+    0:04:44 4033648.5      3.27     289.4       0.0                          
+    0:04:44 4032717.1      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:44 4032627.3      3.86     348.5       0.0                          
+    0:04:45 4033589.6      2.72     265.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:46 4033662.8      2.71     265.4       0.0 picStore_reg[0][0][23]/D 
+    0:04:46 4033959.3      2.71     265.3       0.0 picStore_reg[0][1][21]/D 
+    0:04:47 4033959.3      2.71     265.4       0.0 picStore_reg[0][1][21]/D 
+    0:04:47 4033959.3      2.71     265.4       0.0 picStore_reg[0][1][21]/D 
+    0:04:47 4034265.8      2.71     265.3       0.0 picStore_reg[0][0][22]/D 
+    0:04:47 4034962.0      2.70     265.3       0.0 picStore_reg[1][0][20]/D 
+    0:04:47 4035061.8      2.70     269.1       0.0 picStore_reg[0][0][22]/D 
+    0:04:48 4036727.9      2.70     268.9       0.0 picStore_reg[0][0][22]/D 
+    0:04:48 4037378.1      2.69     268.8       0.0 picStore_reg[1][1][21]/D 
+    0:04:48 4037371.4      2.69     268.7       0.0 picStore_reg[1][1][21]/D 
+    0:04:48 4037098.1      2.69     268.6       0.0                          
+    0:04:49 4036574.9      2.69     268.6       0.0                          
+    0:04:49 4034715.4      2.69     268.6       0.0                          
+    0:04:49 4033669.0      2.69     268.6       0.0                          
+    0:04:49 4032715.7      2.69     268.6       0.0                          
+    0:04:49 4032469.0      2.69     268.6       0.0                          
+    0:04:49 4031689.2      2.69     268.6       0.0                          
+    0:04:50 4027602.7      2.69     267.9       0.0                          
+    0:04:51 4022266.5      2.69     267.9       0.0                          
+    0:04:51 4020293.4      2.69     267.8       0.0                          
+    0:04:51 4020556.6      2.69     267.8       0.0                          
+    0:04:51 4020596.5      2.69     267.7       0.0                          
+    0:04:51 4021156.3      2.69     267.7       0.0                          
+    0:04:52 4021169.7      2.69     267.7       0.0                          
+    0:04:52 4022349.1      2.69     267.6       0.0                          
+    0:04:52 4022748.8      2.69     267.5       0.0                          
+    0:04:52 4022785.4      2.69     267.4       0.0                          
+    0:04:52 4022795.4      2.69     267.4       0.0                          
+    0:04:52 4023611.8      2.69     267.2       0.0                          
+    0:04:52 4023958.2      2.69     267.1       0.0                          
+    0:04:52 4024541.3      2.69     267.2       0.0                          
+    0:04:53 4024617.8      2.69     267.1       0.0                          
+    0:04:53 4024954.3      2.69     267.1       0.0                          
+    0:04:53 4024954.3      2.69     267.0       0.0                          
+    0:04:53 4024954.3      2.69     267.2       0.0                          
+    0:04:53 4025314.0      2.69     267.0       0.0                          
+    0:04:53 4025383.9      2.69     266.7       0.0                          
+    0:04:53 4025903.8      2.69     266.4       0.0                          
+    0:04:53 4026526.8      2.69     266.3       0.0                          
+    0:04:54 4028212.9      2.69     266.2       0.0                          
+    0:04:54 4028489.4      2.69     266.1       0.0                          
+    0:04:54 4028489.4      2.69     266.1       0.0                          
+    0:04:54 4029415.6      2.69     265.8       0.0                          
+    0:04:54 4029828.6      2.69     265.2       0.0                          
+    0:04:54 4030771.4      2.69     265.1       0.0                          
+    0:04:54 4030861.2      2.69     263.8       0.0                          
+    0:04:54 4030877.9      2.69     263.6       0.0                          
+    0:04:55 4031260.9      2.69     263.1       0.0                          
+    0:04:55 4031584.0      2.69     263.0       0.0                          
+    0:04:55 4032007.0      2.69     262.9       0.0                          
+    0:04:55 4032083.5      2.69     262.8       0.0                          
+    0:04:55 4032160.0      2.68     262.7       0.0 picStore_reg[1][1][21]/D 
+    0:04:55 4032429.9      2.68     263.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:55 4032433.2      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:56 4032419.9      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:56 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:56 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:57 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:57 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:57 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:58 4032963.1      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:58 4033236.4      2.68     263.1       0.0 picStore_reg[0][1][21]/D 
+    0:04:58 4033299.6      2.67     263.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:58 4034356.0      2.67     263.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:58 4034382.6      2.67     263.0       0.0 picStore_reg[0][1][21]/D 
+    0:04:59 4034145.9      2.67     262.4       0.0 picStore_reg[0][1][21]/D 
+    0:04:59 4034152.6      2.67     262.5       0.0 picStore_reg[0][1][21]/D 
+    0:04:59 4034429.2      2.66     263.8       0.0 picStore_reg[0][1][21]/D 
+    0:04:59 4034715.7      2.66     263.4       0.0 picStore_reg[0][1][21]/D 
+    0:05:00 4034705.7      2.66     263.4       0.0 picStore_reg[0][1][21]/D 
+    0:05:00 4036172.3      2.66     263.4       0.0 picStore_reg[0][1][21]/D 
+    0:05:00 4036198.9      2.66     263.4       0.0 picStore_reg[0][1][21]/D 
+    0:05:01 4036972.1      2.66     263.3       0.0 picStore_reg[0][1][21]/D 
+    0:05:01 4036992.0      2.66     263.5       0.0 picStore_reg[1][1][21]/D 
+    0:05:01 4037498.6      2.65     263.4       0.0 picStore_reg[1][1][21]/D 
+    0:05:01 4037488.6      2.65     264.4       0.0 picStore_reg[0][1][21]/D 
+    0:05:01 4037462.0      2.65     264.4       0.0 picStore_reg[1][1][21]/D 
+    0:05:02 4037888.3      2.65     264.2       0.0 picStore_reg[0][0][22]/D 
+    0:05:02 4038238.1      2.64     263.9       0.0 picStore_reg[0][1][21]/D 
+    0:05:03 4038264.7      2.64     263.9       0.0 picStore_reg[0][1][21]/D 
+    0:05:03 4039014.6      2.64     263.8       0.0 picStore_reg[1][0][20]/D 
+    0:05:04 4039001.3      2.64     263.8       0.0                          
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+
+Information: There are 150 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LightSeparator_DW_mult_uns_49'
+  Processing 'LightSeparator_DW_mult_uns_44'
+  Processing 'LightSeparator_DW_mult_uns_45'
+  Processing 'LightSeparator_DW_mult_uns_48'
+  Processing 'LightSeparator_DW_mult_uns_51'
+  Processing 'LightSeparator_DW_mult_uns_47'
+  Processing 'LightSeparator_DW_mult_uns_46'
+  Processing 'LightSeparator_DW_mult_uns_52'
+  Processing 'LightSeparator_DW_mult_uns_50'
+  Processing 'LightSeparator_DW01_add_14'
+  Processing 'LightSeparator_DW01_add_13'
+  Processing 'LightSeparator_DW01_add_12'
+  Processing 'LightSeparator_DW01_add_11'
+  Processing 'LightSeparator_DW01_add_10'
+  Processing 'LightSeparator_DW01_sub_14'
+  Processing 'LightSeparator_DW01_sub_13'
+  Processing 'LightSeparator_DW01_sub_12'
+  Processing 'LightSeparator_DW01_sub_11'
+  Processing 'LightSeparator_DW01_sub_10'
+  Processing 'LightSeparator'
+Information: The register 'BankRegister_reg[4][12]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][13]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][14]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][15]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][16]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][17]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][18]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][19]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][20]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][21]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][22]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[4][23]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][12]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][13]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][14]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][15]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][16]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][17]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][18]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][19]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][20]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][21]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][22]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[5][23]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][12]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][13]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][14]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][15]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][16]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][17]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][18]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][19]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][20]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][21]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][22]' will be removed. (OPT-1207)
+Information: The register 'BankRegister_reg[6][23]' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+Information: Skipping clock gating on design LightSeparator_DW01_sub_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_50, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_52, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_46, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_47, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_51, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_48, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_45, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_44, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_49, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design LightSeparator. (PWR-730)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[0]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'QN' on cell 'j_reg[4]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[4]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'QN' on cell 'j_reg[3]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[3]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[5]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[1]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'QN' on cell 'j_reg[2]'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'CK' and 'Q' on cell 'j_reg[2]'
+         to break a timing loop. (OPT-314)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+Information: The register 'k_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[1]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:20 3121790.4      4.77     316.5       0.0                          
+    0:00:20 3121790.4      4.77     316.5       0.0                          
+    0:00:20 3121790.4      4.77     316.5       0.0                          
+    0:00:20 3121763.8      4.76     316.0       0.0                          
+    0:00:20 3121763.8      4.76     316.0       0.0                          
+    0:00:22 3002509.5     15.17    1079.9       0.0                          
+    0:00:24 3002492.5     13.20     836.1       0.0                          
+    0:00:24 3001972.7     11.72     878.5       0.0                          
+    0:00:24 3002698.3     12.07     827.8       0.0                          
+    0:00:25 3003775.7     11.58     829.9       0.0                          
+    0:00:25 3004872.0     11.53     855.6       0.0                          
+    0:00:25 3004955.2     10.96     816.3       0.0                          
+    0:00:25 3005425.2     10.87     827.0       0.0                          
+    0:00:26 3005678.0     10.62     800.1       0.0                          
+    0:00:26 3006278.2     10.28     779.2       0.0                          
+    0:00:26 3006544.8      9.89     777.1       0.0                          
+    0:00:26 3006941.1      9.82     776.4       0.0                          
+    0:00:26 3007380.7      9.76     759.5       0.0                          
+    0:00:26 3009016.9      9.59     748.3       0.0                          
+    0:00:26 3011783.1      9.38     725.9       0.0                          
+    0:00:26 3014062.3      9.22     722.3       0.0                          
+    0:00:26 3014182.0      9.09     715.9       0.0                          
+    0:00:26 3015777.8      9.07     713.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3018120.2      8.96     708.2       0.0                          
+    0:00:27 3022344.7      8.13     633.6       0.0 picStore_reg[1][0][18]/D 
+    0:00:27 3027044.0      7.48     590.5       0.0 picStore_reg[1][0][18]/D 
+    0:00:28 3029324.5      7.08     572.0       0.0 picStore_reg[1][0][18]/D 
+    0:00:28 3033931.3      6.77     552.1       0.0 picStore_reg[1][0][23]/D 
+    0:00:28 3038551.3      6.56     528.0       0.0 picStore_reg[1][0][21]/D 
+    0:00:29 3084844.5      6.20     511.9       0.0 picStore_reg[0][0][20]/D 
+    0:00:30 3088370.5      5.51     446.3       0.0 picStore_reg[1][0][19]/D 
+    0:00:31 3090613.0      5.07     416.9       0.0 picStore_reg[1][1][22]/D 
+    0:00:32 3093033.2      4.83     396.2       0.0 picStore_reg[1][0][21]/D 
+    0:00:32 3094645.1      4.72     389.3       0.0                          
+    0:00:33 3097423.3      4.66     377.5       0.0                          
+    0:00:33 3099711.4      4.56     371.9       0.0                          
+    0:00:33 3102193.5      4.50     367.8       0.0                          
+    0:00:33 3103106.4      4.46     367.1       0.0                          
+    0:00:33 3105005.3      4.42     372.9       0.0                          
+    0:00:34 3106777.4      4.34     367.2       0.0                          
+    0:00:34 3107786.8      4.27     364.2       0.0                          
+    0:00:34 3110604.8      4.25     363.1       0.0                          
+    0:00:34 3111427.4      4.21     357.1       0.0                          
+    0:00:34 3111890.2      4.17     349.3       0.0                          
+    0:00:34 3113645.7      4.15     348.1       0.0                          
+    0:00:35 3114228.3      4.13     346.3       0.0                          
+    0:00:35 3114911.2      4.09     344.6       0.0                          
+    0:00:35 3115950.5      4.04     341.5       0.0                          
+    0:00:35 3116756.4      4.01     339.9       0.0                          
+    0:00:35 3117585.7      3.98     335.9       0.0                          
+    0:00:36 3117804.7      3.96     334.9       0.0                          
+    0:00:36 3120622.8      3.94     333.7       0.0                          
+    0:00:36 3121781.8      3.89     330.1       0.0                          
+    0:00:36 3123913.6      3.86     328.5       0.0                          
+    0:00:36 3125949.5      3.84     327.4       0.0                          
+    0:00:37 3127305.2      3.82     326.5       0.0                          
+    0:00:37 3128597.8      3.79     325.2       0.0                          
+    0:00:37 3129740.7      3.79     325.3       0.0                          
+    0:00:37 3130393.7      3.79     325.3       0.0                          
+    0:00:37 3131689.6      3.78     324.9       0.0                          
+    0:00:37 3133511.1      3.76     323.6       0.0                          
+    0:00:37 3136033.1      3.76     322.4       0.0                          
+    0:00:37 3136495.9      3.75     322.2       0.0                          
+    0:00:38 3137561.8      3.73     321.5       0.0                          
+    0:00:38 3138235.2      3.71     319.7       0.0                          
+    0:00:38 3138754.1      3.68     318.6       0.0                          
+    0:00:38 3139753.5      3.67     317.9       0.0                          
+    0:00:38 3140752.9      3.66     317.1       0.0                          
+    0:00:39 3141082.7      3.66     316.2       0.0                          
+    0:00:39 3143269.2      3.66     316.0       0.0                          
+    0:00:39 3143359.0      3.66     315.6       0.0                          
+    0:00:39 3143808.6      3.66     315.3       0.0                          
+    0:00:39 3143668.4      3.66     315.1       0.0                          
+    0:00:39 3144644.5      3.66     315.0       0.0                          
+    0:00:39 3144897.8      3.66     314.0       0.0                          
+    0:00:39 3146033.5      3.66     311.9       0.0                          
+    0:00:39 3146433.2      3.66     308.9       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:39 3146433.2      3.66     308.9       0.0                          
+    0:00:40 3146736.8      3.65     308.2       0.0 picStore_reg[1][0][23]/D 
+    0:00:40 3148199.6      3.64     308.0       0.0 picStore_reg[1][0][23]/D 
+    0:00:40 3149559.2      3.61     306.6       0.0 picStore_reg[1][0][20]/D 
+    0:00:40 3150611.8      3.60     304.0       0.0 picStore_reg[1][0][23]/D 
+    0:00:40 3150898.3      3.59     303.5       0.0 picStore_reg[1][0][21]/D 
+    0:00:41 3151701.4      3.58     304.3       0.0 picStore_reg[1][0][23]/D 
+    0:00:41 3152064.5      3.57     304.0       0.0 picStore_reg[1][0][23]/D 
+    0:00:41 3152800.6      3.57     303.8       0.0 picStore_reg[1][0][21]/D 
+    0:00:41 3153027.3      3.56     303.5       0.0 picStore_reg[1][0][20]/D 
+    0:00:41 3154286.1      3.54     301.9       0.0 picStore_reg[0][0][23]/D 
+    0:00:41 3154625.9      3.53     301.7       0.0 picStore_reg[1][0][23]/D 
+    0:00:42 3155389.1      3.52     301.7       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3156058.7      3.51     301.0       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3156708.8      3.50     301.1       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3156732.1      3.49     300.9       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3156438.9      3.49     301.4       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3157242.0      3.48     301.0       0.0 picStore_reg[1][0][21]/D 
+    0:00:42 3158115.0      3.47     300.9       0.0 picStore_reg[1][0][21]/D 
+    0:00:43 3159367.7      3.46     300.5       0.0 picStore_reg[1][0][21]/D 
+    0:00:43 3159381.0      3.46     300.3       0.0 picStore_reg[1][0][21]/D 
+    0:00:43 3159577.7      3.46     300.1       0.0 picStore_reg[1][0][20]/D 
+    0:00:43 3160137.0      3.45     299.6       0.0 picStore_reg[1][0][23]/D 
+    0:00:43 3160000.6      3.45     301.4       0.0 picStore_reg[1][0][21]/D 
+    0:00:44 3160027.3      3.43     299.9       0.0 picStore_reg[1][0][20]/D 
+    0:00:44 3160650.3      3.42     299.5       0.0 picStore_reg[1][0][21]/D 
+    0:00:44 3161303.2      3.41     297.7       0.0 picStore_reg[1][0][21]/D 
+    0:00:44 3161007.2      3.41     297.6       0.0 picStore_reg[1][0][21]/D 
+    0:00:44 3161916.7      3.40     297.2       0.0 picStore_reg[1][0][23]/D 
+    0:00:45 3161890.1      3.39     297.0       0.0 picStore_reg[1][1][22]/D 
+    0:00:45 3161633.5      3.38     296.9       0.0 picStore_reg[1][0][21]/D 
+    0:00:45 3161989.9      3.38     296.9       0.0 picStore_reg[1][0][23]/D 
+    0:00:45 3162046.5      3.38     296.7       0.0 picStore_reg[1][0][21]/D 
+    0:00:45 3162533.1      3.37     296.6       0.0 picStore_reg[1][0][20]/D 
+    0:00:45 3162426.6      3.37     296.4       0.0 picStore_reg[1][0][20]/D 
+    0:00:45 3163293.0      3.37     296.3       0.0 picStore_reg[1][0][23]/D 
+    0:00:46 3163469.8      3.36     296.1       0.0 picStore_reg[0][0][18]/D 
+    0:00:46 3163619.4      3.35     296.0       0.0 picStore_reg[1][0][21]/D 
+    0:00:46 3164545.6      3.35     295.9       0.0 picStore_reg[1][0][20]/D 
+    0:00:46 3164645.4      3.35     295.8       0.0 picStore_reg[1][1][22]/D 
+    0:00:46 3165298.4      3.34     295.5       0.0 picStore_reg[1][0][21]/D 
+    0:00:46 3166334.4      3.34     293.4       0.0 picStore_reg[1][0][23]/D 
+    0:00:47 3166843.8      3.33     293.9       0.0 picStore_reg[1][0][23]/D 
+    0:00:47 3167020.6      3.32     293.4       0.0 picStore_reg[1][0][21]/D 
+    0:00:47 3168516.5      3.32     293.0       0.0 picStore_reg[1][0][20]/D 
+    0:00:47 3169979.3      3.30     291.9       0.0 picStore_reg[1][1][22]/D 
+    0:00:47 3170138.9      3.30     291.6       0.0 picStore_reg[1][1][22]/D 
+    0:00:47 3170129.0      3.29     291.5       0.0 picStore_reg[1][0][23]/D 
+    0:00:48 3170732.0      3.28     290.4       0.0 picStore_reg[1][1][22]/D 
+    0:00:48 3171075.1      3.27     289.3       0.0 picStore_reg[1][0][23]/D 
+    0:00:48 3171984.2      3.26     289.0       0.0 picStore_reg[0][0][20]/D 
+    0:00:48 3172040.7      3.25     288.0       0.0 picStore_reg[1][1][22]/D 
+    0:00:48 3172637.1      3.25     287.8       0.0 picStore_reg[1][0][23]/D 
+    0:00:48 3172244.1      3.24     287.6       0.0 picStore_reg[1][1][21]/D 
+    0:00:49 3172127.7      3.24     287.3       0.0 picStore_reg[1][0][23]/D 
+    0:00:49 3173410.8      3.23     287.0       0.0 picStore_reg[0][0][18]/D 
+    0:00:49 3173321.0      3.23     286.8       0.0 picStore_reg[1][1][21]/D 
+    0:00:49 3173297.7      3.23     286.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:49 3173727.3      3.22     286.9       0.0 picStore_reg[1][0][23]/D 
+    0:00:49 3173510.6      3.22     286.8       0.0 picStore_reg[1][0][23]/D 
+    0:00:50 3173293.9      3.22     286.7       0.0 picStore_reg[1][0][23]/D 
+    0:00:50 3173403.7      3.22     286.5       0.0 picStore_reg[1][0][18]/D 
+    0:00:50 3173496.8      3.21     286.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:50 3173490.2      3.21     286.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:50 3173323.8      3.21     285.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:50 3173653.6      3.21     285.8       0.0 picStore_reg[1][1][21]/D 
+    0:00:50 3174087.0      3.21     285.7       0.0 picStore_reg[0][0][23]/D 
+    0:00:51 3174403.5      3.20     285.5       0.0 picStore_reg[1][0][23]/D 
+    0:00:51 3175929.5      3.20     285.1       0.0 picStore_reg[1][0][18]/D 
+    0:00:51 3176179.4      3.19     284.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:51 3177368.9      3.18     283.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:52 3177622.2      3.18     283.8       0.0 picStore_reg[1][0][23]/D 
+    0:00:52 3177262.5      3.17     283.6       0.0 picStore_reg[1][1][21]/D 
+    0:00:52 3177542.4      3.17     282.7       0.0 picStore_reg[1][1][21]/D 
+    0:00:52 3177785.7      3.16     282.5       0.0 picStore_reg[1][1][21]/D 
+    0:00:52 3178491.8      3.16     282.4       0.0 picStore_reg[1][1][21]/D 
+    0:00:53 3179074.9      3.15     282.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:53 3179381.0      3.14     280.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:53 3180540.5      3.13     280.3       0.0 picStore_reg[1][0][18]/D 
+    0:00:53 3180413.6      3.11     278.8       0.0 picStore_reg[1][1][21]/D 
+    0:00:53 3180347.1      3.10     278.6       0.0 picStore_reg[1][0][23]/D 
+    0:00:53 3180083.8      3.10     278.6       0.0 picStore_reg[1][1][21]/D 
+    0:00:54 3181136.4      3.09     278.3       0.0 picStore_reg[1][1][21]/D 
+    0:00:54 3182343.0      3.09     279.6       0.0 picStore_reg[1][0][23]/D 
+    0:00:54 3182583.0      3.08     279.2       0.0 picStore_reg[1][0][18]/D 
+    0:00:54 3183898.9      3.08     279.0       0.0 picStore_reg[1][0][23]/D 
+    0:00:54 3184178.8      3.07     278.9       0.0 picStore_reg[1][0][18]/D 
+    0:00:54 3184135.5      3.07     278.8       0.0 picStore_reg[1][1][21]/D 
+    0:00:54 3184715.3      3.07     278.7       0.0 picStore_reg[1][1][21]/D 
+    0:00:55 3185841.6      3.07     278.4       0.0 picStore_reg[1][1][21]/D 
+    0:00:55 3185805.0      3.05     278.0       0.0 picStore_reg[1][0][18]/D 
+    0:00:55 3187164.1      3.05     277.8       0.0 picStore_reg[1][0][18]/D 
+    0:00:55 3187214.0      3.05     277.6       0.0 picStore_reg[1][0][18]/D 
+    0:00:55 3187957.2      3.04     277.3       0.0 picStore_reg[1][1][21]/D 
+    0:00:55 3188876.8      3.04     277.1       0.0 picStore_reg[1][0][18]/D 
+    0:00:56 3188896.7      3.04     277.2       0.0 picStore_reg[1][0][18]/D 
+    0:00:56 3189469.8      3.03     276.8       0.0 picStore_reg[1][0][18]/D 
+    0:00:56 3189799.6      3.03     276.6       0.0 picStore_reg[1][0][18]/D 
+    0:00:56 3190636.0      3.02     276.4       0.0 picStore_reg[1][0][23]/D 
+    0:00:56 3191225.8      3.02     276.2       0.0 picStore_reg[1][1][21]/D 
+    0:00:57 3191745.7      3.02     276.1       0.0 picStore_reg[1][0][23]/D 
+    0:00:57 3192292.2      3.01     276.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:57 3192374.8      3.01     271.5       0.0 picStore_reg[1][0][18]/D 
+    0:00:57 3192438.0      3.00     271.2       0.0 picStore_reg[1][0][23]/D 
+    0:00:57 3192908.0      3.00     271.1       0.0 picStore_reg[1][1][21]/D 
+    0:00:57 3194513.8      3.00     270.9       0.0 picStore_reg[1][0][23]/D 
+    0:00:57 3193970.6      3.00     270.6       0.0 picStore_reg[1][1][21]/D 
+    0:00:58 3194310.4      3.00     270.4       0.0 picStore_reg[1][0][23]/D 
+    0:00:58 3195503.2      2.99     270.2       0.0 picStore_reg[1][0][23]/D 
+    0:00:58 3195573.1      2.98     270.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:58 3195669.5      2.98     270.0       0.0 picStore_reg[1][1][21]/D 
+    0:00:58 3195799.7      2.98     269.8       0.0 picStore_reg[1][1][21]/D 
+    0:00:58 3195266.5      2.97     269.4       0.0 picStore_reg[1][0][18]/D 
+    0:00:58 3195596.3      2.97     269.2       0.0 picStore_reg[1][1][21]/D 
+    0:00:59 3194760.0      2.97     271.9       0.0 picStore_reg[1][1][21]/D 
+    0:00:59 3195033.2      2.97     271.5       0.0 picStore_reg[1][1][21]/D 
+    0:00:59 3195965.6      2.96     271.3       0.0 picStore_reg[1][1][21]/D 
+    0:00:59 3196514.9      2.95     270.7       0.0 picStore_reg[1][0][23]/D 
+    0:00:59 3198613.9      2.95     270.1       0.0 picStore_reg[1][0][23]/D 
+    0:00:59 3198834.0      2.94     269.9       0.0 picStore_reg[1][0][23]/D 
+    0:00:59 3199274.0      2.94     269.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:00 3199110.6      2.94     269.4       0.0 picStore_reg[1][1][21]/D 
+    0:01:00 3199067.3      2.94     269.3       0.0 picStore_reg[1][0][23]/D 
+    0:01:00 3199160.5      2.93     269.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:00 3199620.5      2.93     269.0       0.0 picStore_reg[1][0][23]/D 
+    0:01:00 3200617.0      2.93     268.9       0.0 picStore_reg[1][1][21]/D 
+    0:01:00 3201276.6      2.93     268.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:01 3202842.4      2.92     268.3       0.0 picStore_reg[1][0][23]/D 
+    0:01:01 3203635.1      2.92     268.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:01 3203868.4      2.91     267.9       0.0 picStore_reg[1][1][21]/D 
+    0:01:01 3203758.7      2.91     267.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:01 3204448.2      2.91     267.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:01 3204458.2      2.91     267.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:02 3204484.8      2.90     267.4       0.0 picStore_reg[1][1][21]/D 
+    0:01:02 3204701.0      2.90     266.9       0.0 picStore_reg[1][1][21]/D 
+    0:01:02 3204683.9      2.90     266.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:02 3206053.0      2.90     266.5       0.0 picStore_reg[1][1][21]/D 
+    0:01:02 3206393.3      2.89     266.0       0.0 picStore_reg[1][0][23]/D 
+    0:01:02 3206899.8      2.88     266.0       0.0 picStore_reg[1][0][23]/D 
+    0:01:02 3206853.3      2.88     265.3       0.0 picStore_reg[1][0][23]/D 
+    0:01:03 3207066.7      2.88     265.0       0.0 picStore_reg[1][1][21]/D 
+    0:01:03 3207579.9      2.87     264.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:03 3207816.6      2.87     264.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:03 3207663.5      2.87     264.6       0.1 picStore_reg[1][1][21]/D 
+    0:01:03 3207630.3      2.87     264.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:03 3207347.1      2.87     264.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:03 3208662.9      2.87     264.5       0.1 picStore_reg[1][1][21]/D 
+    0:01:04 3209752.6      2.86     264.4       0.1 picStore_reg[1][0][23]/D 
+    0:01:04 3209496.0      2.86     264.1       0.1 picStore_reg[1][0][23]/D 
+    0:01:04 3209736.0      2.86     264.1       0.1 picStore_reg[1][1][21]/D 
+    0:01:04 3210362.3      2.86     264.0       0.1 picStore_reg[1][1][21]/D 
+    0:01:04 3210732.0      2.86     263.7       0.1 picStore_reg[1][0][23]/D 
+    0:01:04 3211051.4      2.85     263.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:05 3211694.3      2.85     263.4       0.1 picStore_reg[1][0][23]/D 
+    0:01:05 3212500.8      2.84     263.4       0.1 picStore_reg[1][1][21]/D 
+    0:01:05 3213187.0      2.84     263.1       0.1 picStore_reg[1][1][21]/D 
+    0:01:05 3214496.7      2.83     263.0       0.1 picStore_reg[1][0][19]/D 
+    0:01:05 3214380.3      2.83     263.0       0.1 picStore_reg[1][0][23]/D 
+    0:01:05 3214390.3      2.83     262.8       0.1 picStore_reg[1][1][21]/D 
+    0:01:05 3214573.7      2.83     262.8       0.1 picStore_reg[1][0][23]/D 
+    0:01:06 3214473.9      2.82     262.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:06 3214444.0      2.82     262.6       0.1 picStore_reg[0][0][20]/D 
+    0:01:06 3214450.6      2.82     262.6       0.1 picStore_reg[1][1][21]/D 
+    0:01:06 3214151.2      2.82     262.3       0.1 picStore_reg[1][0][23]/D 
+    0:01:06 3214491.0      2.82     262.3       0.1 picStore_reg[1][0][23]/D 
+    0:01:06 3214514.3      2.82     262.1       0.1 picStore_reg[1][1][21]/D 
+    0:01:06 3214110.8      2.82     261.1       0.1 picStore_reg[1][1][21]/D 
+    0:01:06 3214610.8      2.82     261.1       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3215626.8      2.81     261.0       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3216756.4      2.81     260.9       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3217549.5      2.81     260.9       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3217532.9      2.81     260.8       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3218099.4      2.81     260.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3218435.8      2.80     260.6       0.1 picStore_reg[1][0][23]/D 
+    0:01:07 3219042.2      2.80     260.5       0.1 picStore_reg[0][0][20]/D 
+    0:01:07 3219798.7      2.80     260.4       0.1 picStore_reg[1][0][14]/D 
+    0:01:07 3220758.7      2.80     260.2       0.1 picStore_reg[1][0][23]/D 
+    0:01:08 3221401.7      2.80     259.9       0.1 picStore_reg[1][0][23]/D 
+    0:01:08 3221115.1      2.80     259.8       0.1 picStore_reg[1][0][23]/D 
+    0:01:09 3220668.4      2.80     259.8       0.1 picStore_reg[1][0][23]/D 
+    0:01:10 3222798.3      2.79     259.4       0.1                          
+    0:01:10 3219985.0      2.79     399.8       0.1                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:10 3219985.0      2.79     399.8       0.1                          
+    0:01:10 3220541.5      2.79     399.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:11 3220558.1      2.78     400.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:11 3220994.4      2.78     400.3       0.0 picStore_reg[1][0][23]/D 
+    0:01:11 3222473.7      2.78     401.1       0.0 picStore_reg[0][0][20]/D 
+    0:01:11 3223649.9      2.77     400.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:11 3223636.6      2.77     402.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225249.5      2.77     401.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225266.1      2.77     401.9       0.0 picStore_reg[0][0][20]/D 
+    0:01:12 3225246.2      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225252.8      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225252.8      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225219.5      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:12 3225509.4      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:13 3225509.4      2.77     401.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:13 3225509.4      2.77     401.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:14 3225509.4      2.77     401.8       0.0                          
+    0:01:14 3225999.4      2.77     401.4       0.0                          
+    0:01:14 3226645.7      2.77     401.2       0.0                          
+    0:01:14 3227928.8      2.77     398.9       0.0                          
+    0:01:14 3228845.0      2.77     398.8       0.0                          
+    0:01:14 3229218.0      2.76     398.7       0.0                          
+    0:01:14 3229831.1      2.76     398.6       0.0                          
+    0:01:14 3230264.0      2.76     397.1       0.0                          
+    0:01:15 3229914.2      2.76     397.0       0.0                          
+    0:01:15 3229927.5      2.76     396.9       0.0                          
+    0:01:15 3229894.3      2.76     396.3       0.0                          
+    0:01:15 3230190.8      2.76     396.2       0.0                          
+    0:01:15 3230450.7      2.76     396.1       0.0                          
+    0:01:15 3229871.0      2.76     396.1       0.0                          
+    0:01:15 3229584.4      2.76     396.1       0.0                          
+    0:01:15 3229644.3      2.76     395.6       0.0                          
+    0:01:15 3232439.5      2.76     338.2       0.0                          
+    0:01:15 3234465.4      2.76     334.4       0.0                          
+    0:01:16 3235115.0      2.76     333.2       0.0                          
+    0:01:16 3234865.0      2.76     332.1       0.0                          
+    0:01:16 3235891.0      2.76     330.6       0.0                          
+    0:01:16 3237619.9      2.76     329.6       0.0                          
+    0:01:16 3238296.6      2.76     328.7       0.0                          
+    0:01:16 3238296.6      2.76     328.6       0.0                          
+    0:01:16 3237580.4      2.76     328.3       0.0                          
+    0:01:16 3238100.3      2.76     328.1       0.0                          
+    0:01:16 3239902.8      2.76     326.4       0.0                          
+    0:01:17 3241341.8      2.76     324.5       0.0                          
+    0:01:17 3243170.9      2.76     322.6       0.0                          
+    0:01:17 3243207.5      2.76     322.3       0.0                          
+    0:01:17 3244270.5      2.76     321.4       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:17 3244270.5      2.76     321.4       0.0                          
+    0:01:17 3244270.5      2.76     321.4       0.0                          
+    0:01:17 3204337.9      2.81     321.1       0.0                          
+    0:01:17 3185120.5      2.81     321.8       0.0                          
+    0:01:18 3173280.9      2.81     313.3       0.0                          
+    0:01:18 3165096.6      2.82     315.2       0.0                          
+    0:01:18 3160277.9      2.82     315.2       0.0                          
+    0:01:18 3160277.9      2.82     315.2       0.0                          
+    0:01:18 3160277.9      2.82     315.2       0.0                          
+    0:01:18 3153412.2      2.92     317.2       0.0                          
+    0:01:19 3151536.1      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3151013.8      2.92     317.3       0.0                          
+    0:01:19 3152426.2      2.79     313.5       0.0 picStore_reg[0][0][20]/D 
+    0:01:19 3153938.8      2.77     312.7       0.0 picStore_reg[0][0][20]/D 
+    0:01:20 3153965.4      2.76     312.3       0.0 picStore_reg[1][0][23]/D 
+    0:01:20 3154445.4      2.75     314.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:20 3154438.7      2.75     314.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:20 3154448.7      2.75     314.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:20 3154718.6      2.75     314.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:20 3155317.9      2.74     314.1       0.0 picStore_reg[0][0][20]/D 
+    0:01:21 3156580.5      2.73     313.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:21 3156913.6      2.73     313.4       0.0 picStore_reg[1][0][18]/D 
+    0:01:21 3157006.8      2.73     313.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:21 3157699.6      2.72     313.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:21 3157956.3      2.72     315.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:21 3158679.6      2.71     314.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:21 3160125.6      2.71     314.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:22 3159748.8      2.70     314.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:22 3159948.9      2.70     313.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:22 3160881.7      2.70     313.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:22 3162577.8      2.69     313.5       0.0 picStore_reg[0][0][20]/D 
+    0:01:22 3162091.1      2.69     313.3       0.0 picStore_reg[0][0][23]/D 
+    0:01:22 3161907.7      2.69     313.2       0.0 picStore_reg[0][0][20]/D 
+    0:01:23 3162141.0      2.68     314.4       0.0 picStore_reg[0][0][20]/D 
+    0:01:23 3162460.9      2.68     314.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:23 3162514.1      2.68     314.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:23 3162024.1      2.68     314.8       0.0                          
+    0:01:23 3161550.8      2.68     314.8       0.0                          
+    0:01:23 3159344.3      2.68     313.4       0.0                          
+    0:01:23 3157574.6      2.68     313.4       0.0                          
+    0:01:24 3156578.1      2.68     313.4       0.0                          
+    0:01:24 3155761.7      2.68     313.4       0.0                          
+    0:01:24 3154685.3      2.68     311.2       0.0                          
+    0:01:24 3153465.4      2.68     311.2       0.0                          
+    0:01:24 3147073.2      2.68     308.9       0.0                          
+    0:01:24 3129153.1      2.68     308.9       0.0                          
+    0:01:25 3124227.4      2.68     308.9       0.0                          
+    0:01:25 3121834.7      2.68     308.9       0.0                          
+    0:01:25 3116485.6      2.68     308.9       0.0                          
+    0:01:25 3112163.5      2.68     308.9       0.0                          
+    0:01:25 3111876.9      2.68     308.9       0.0                          
+    0:01:26 3109871.1      4.25     419.3       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:26 3109608.3      4.25     419.6       0.0                          
+    0:01:27 3110880.9      2.87     324.0       0.0 picStore_reg[1][0][21]/D 
+    0:01:27 3110134.4      2.78     318.0       0.0 picStore_reg[1][0][21]/D 
+    0:01:27 3111120.4      2.76     317.2       0.0 picStore_reg[1][0][18]/D 
+    0:01:28 3111120.4      2.76     317.1       0.0 picStore_reg[1][0][21]/D 
+    0:01:28 3110973.6      2.74     317.1       0.0 picStore_reg[1][0][18]/D 
+    0:01:28 3111469.7      2.73     317.6       0.0 picStore_reg[1][0][18]/D 
+    0:01:28 3112639.2      2.73     317.6       0.0 picStore_reg[1][0][21]/D 
+    0:01:28 3112982.3      2.72     319.2       0.0 picStore_reg[1][0][18]/D 
+    0:01:29 3113285.5      2.72     319.1       0.0 picStore_reg[1][0][18]/D 
+    0:01:29 3113175.7      2.72     319.1       0.0 picStore_reg[0][0][23]/D 
+    0:01:29 3113842.0      2.71     316.7       0.0 picStore_reg[0][0][23]/D 
+    0:01:29 3114215.0      2.71     316.7       0.0 picStore_reg[0][0][20]/D 
+    0:01:29 3114548.2      2.71     316.6       0.0 picStore_reg[0][0][23]/D 
+    0:01:29 3114554.8      2.71     316.6       0.0 picStore_reg[0][0][20]/D 
+    0:01:30 3114361.4      2.71     316.4       0.0 picStore_reg[1][0][23]/D 
+    0:01:30 3115114.6      2.71     316.5       0.0 picStore_reg[1][0][18]/D 
+    0:01:30 3115121.3      2.71     316.5       0.0 picStore_reg[1][0][18]/D 
+    0:01:30 3115224.4      2.70     313.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:30 3115341.3      2.70     313.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:31 3114984.4      2.70     313.2       0.0                          
+    0:01:31 3113651.4      2.70     313.2       0.0                          
+    0:01:31 3113401.4      2.70     313.2       0.0                          
+    0:01:31 3113134.9      2.70     313.1       0.0                          
+    0:01:31 3111351.8      2.70     313.1       0.0                          
+    0:01:31 3110135.3      2.70     313.1       0.0                          
+    0:01:32 3110465.1      2.70     313.1       0.0                          
+    0:01:32 3110588.1      2.70     311.3       0.0                          
+    0:01:32 3111161.2      2.70     311.2       0.0                          
+    0:01:32 3111570.9      2.70     311.1       0.0                          
+    0:01:33 3111844.1      2.70     309.8       0.0                          
+    0:01:33 3112410.6      2.70     308.5       0.0                          
+    0:01:33 3113696.5      2.70     307.7       0.0                          
+    0:01:33 3113773.0      2.70     307.7       0.0                          
+    0:01:33 3114023.0      2.69     307.7       0.0                          
+    0:01:33 3114382.7      2.69     303.9       0.0                          
+    0:01:33 3115138.8      2.69     303.2       0.0                          
+    0:01:33 3115918.2      2.69     303.1       0.0                          
+    0:01:34 3116214.7      2.69     302.7       0.0                          
+    0:01:34 3116234.7      2.69     302.6       0.0                          
+    0:01:34 3117330.5      2.68     302.3       0.0                          
+    0:01:34 3117353.8      2.68     302.2       0.0                          
+    0:01:34 3118233.4      2.68     302.1       0.0                          
+    0:01:34 3119896.2      2.68     301.6       0.0                          
+    0:01:34 3120412.8      2.68     300.5       0.0                          
+    0:01:34 3121072.4      2.68     299.3       0.0                          
+    0:01:34 3121715.3      2.68     298.8       0.0                          
+    0:01:34 3124177.9      2.68     296.7       0.0                          
+    0:01:34 3125147.4      2.68     296.5       0.0                          
+    0:01:34 3126626.7      2.68     295.6       0.0                          
+    0:01:35 3126676.6      2.68     294.7       0.0                          
+    0:01:35 3126783.1      2.68     291.1       0.0                          
+    0:01:35 3126776.4      2.68     291.0       0.0                          
+    0:01:35 3127066.3      2.68     290.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:35 3127053.0      2.67     290.6       0.0 picStore_reg[1][0][23]/D 
+    0:01:35 3127009.7      2.67     290.5       0.0 picStore_reg[1][0][18]/D 
+    0:01:35 3127703.1      2.66     290.0       0.0 picStore_reg[1][0][23]/D 
+    0:01:35 3128029.6      2.66     290.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:36 3128009.6      2.66     290.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:36 3128159.3      2.66     289.0       0.0 picStore_reg[1][0][23]/D 
+    0:01:36 3128908.7      2.65     291.0       0.0 picStore_reg[0][0][20]/D 
+    0:01:36 3129271.8      2.65     290.7       0.0 picStore_reg[0][0][20]/D 
+    0:01:36 3129354.9      2.65     290.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:37 3129688.1      2.64     290.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:37 3130011.2      2.64     290.7       0.0 picStore_reg[1][0][21]/D 
+    0:01:37 3130537.8      2.64     290.5       0.0 picStore_reg[1][0][18]/D 
+    0:01:37 3131904.0      2.64     290.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:37 3131937.3      2.63     290.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:37 3132110.3      2.63     289.8       0.0 picStore_reg[1][0][21]/D 
+    0:01:38 3132403.5      2.62     290.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:38 3132600.2      2.62     290.2       0.0 picStore_reg[1][0][23]/D 
+    0:01:38 3133203.3      2.62     289.9       0.0 picStore_reg[1][0][23]/D 
+    0:01:38 3133203.3      2.61     291.3       0.0 picStore_reg[1][0][18]/D 
+    0:01:38 3133273.1      2.61     291.7       0.0 picStore_reg[0][0][20]/D 
+    0:01:38 3133922.7      2.60     289.7       0.0 picStore_reg[0][0][20]/D 
+    0:01:38 3133912.8      2.60     289.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:39 3134389.4      2.60     289.8       0.0 picStore_reg[1][0][23]/D 
+    0:01:39 3134432.6      2.60     289.8       0.0 picStore_reg[1][0][21]/D 
+    0:01:39 3134955.9      2.60     289.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:39 3135255.7      2.59     290.5       0.0 picStore_reg[1][0][23]/D 
+    0:01:39 3135545.6      2.59     290.5       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3135838.8      2.59     290.5       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3135845.5      2.59     290.4       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3136118.7      2.59     291.8       0.0 picStore_reg[1][0][18]/D 
+    0:01:40 3136451.8      2.59     291.6       0.0 picStore_reg[0][0][23]/D 
+    0:01:40 3136448.5      2.58     291.5       0.0 picStore_reg[0][0][23]/D 
+    0:01:40 3136715.1      2.58     292.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3137554.8      2.58     292.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3138374.6      2.58     292.1       0.0 picStore_reg[1][0][23]/D 
+    0:01:40 3139151.1      2.58     291.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:41 3139094.5      2.58     291.7       0.0 picStore_reg[1][0][23]/D 
+    0:01:41 3139027.5      2.58     291.7       0.0                          
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Tue Jan  5 18:00:39 2016
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LightSeparator         tsmc18_wl50       slow
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   2.8463 mW   (37%)
+  Net Switching Power  =   4.7450 mW   (63%)
+                         ---------
+Total Dynamic Power    =   7.5913 mW  (100%)
+
+Cell Leakage Power     =  14.6170 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  4.4804e-02        2.2360e-03        2.7176e+04        4.7068e-02  (   0.62%)
+register           0.1521        6.0580e-03        5.7841e+05            0.1588  (   2.09%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.6494            4.7367        1.4011e+07            7.4001  (  97.29%)
+--------------------------------------------------------------------------------------------------
+Total              2.8463 mW         4.7450 mW     1.4617e+07 pW         7.6059 mW
+1
+Current design is 'LightSeparator'.
+design_vision> 

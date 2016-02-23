@@ -1,0 +1,1149 @@
+
+Settings:
+search_path:       . /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/minpower/syn /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/dw/syn_ver /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/dw/sim_ver ../LibraryFiles/db ./unmapped ./mapped ./scripts ./rtl ./.solutions
+link_library:      * slow.db dw_foundation.sldb
+target_library:    slow.db
+
+### Executing common setup file 'ref/dc_settings.tcl' ...
+Error: could not open script file "../ref/tools/procs.tcl" (CMD-015)
+
+
+I am ready...
+
+Initializing gui preferences from file  /users/agnon/year2011/eyarg/.synopsys_dv_prefs.tcl
+dc_shell> gui_start
+design_vision> source ./scripts/run8.tcl
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/gtech.db'
+Loading db file '/usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Error: Cannot read file 'LightSeparator.v'. (UID-58)
+No designs were read
+Error: Can't find design 'LightSeparator'. (UID-109)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Can't find port 'clk'. (UID-109)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list 'clock_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list '<object_list>' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'my_clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find port 'fibout'. (UID-109)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find object 'reset'. (UID-109)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: No files or designs were specified. (UID-22)
+Error: No files or designs were specified. (UID-22)
+Error: Current design is not defined. (UID-4)
+0
+design_vision> source ./scripts/run8.tcl
+Loading verilog file '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:174: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:155: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:155: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:135: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:135: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:220: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:211: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:211: signed to unsigned conversion occurs. (VER-318)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:193: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v:229: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 73 in file
+        '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            92            |     no/auto      |
+|           112            |    auto/auto     |
+|           124            |    auto/auto     |
+|           136            |    auto/auto     |
+|           138            |    auto/auto     |
+|           144            |    auto/auto     |
+|           156            |    auto/auto     |
+|           158            |    auto/auto     |
+|           164            |    auto/auto     |
+|           175            |    auto/auto     |
+|           177            |    auto/auto     |
+|           183            |    auto/auto     |
+|           212            |    auto/auto     |
+|           221            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine LightSeparator line 73 in file
+                '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  BankRegister_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ImOutput_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     apb_st_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     PRDATA_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      CTRL_reg       | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      CTRL_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|        j_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        i_reg        | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    picStore_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|        k_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=============================================================
+|  block name/line   | Inputs | Outputs | # sel inputs | MB |
+=============================================================
+| LightSeparator/138 |   8    |    1    |      3       | N  |
+| LightSeparator/139 |   8    |   12    |      3       | N  |
+| LightSeparator/144 |   8    |    1    |      3       | N  |
+| LightSeparator/145 |   8    |   12    |      3       | N  |
+| LightSeparator/146 |   8    |   12    |      3       | N  |
+| LightSeparator/164 |   8    |    1    |      3       | N  |
+| LightSeparator/165 |   8    |   12    |      3       | N  |
+| LightSeparator/166 |   8    |   12    |      3       | N  |
+| LightSeparator/183 |   8    |    1    |      3       | N  |
+| LightSeparator/184 |   8    |   12    |      3       | N  |
+| LightSeparator/185 |   8    |   12    |      3       | N  |
+=============================================================
+Presto compilation completed successfully.
+Current design is now '/users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.db:LightSeparator'
+Loaded 1 design.
+Current design is 'LightSeparator'.
+Current design is 'LightSeparator'.
+
+  Linking design 'LightSeparator'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LightSeparator              /users/agnon/year2011/eyarg/part3/synthesis/rtl/LightSeparator.db
+  slow (library)              /users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db
+  dw_foundation.sldb (library) /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/dw_foundation.sldb
+
+ 
+****************************************
+check_design summary:
+Version:     J-2014.09-SP2
+Date:        Thu Jan  7 11:38:15 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+No issues found.
+--------------------------------------------------------------------------------
+
+Error: Cannot find the specified driving cell in memory.   (UID-993)
+Warning: Can't find port 'fibout' in design 'LightSeparator'. (UID-95)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+Warning: Can't find object 'reset' in design 'LightSeparator'. (UID-95)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+ 
+****************************************
+check_design summary:
+Version:     J-2014.09-SP2
+Date:        Thu Jan  7 11:38:15 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+No issues found.
+--------------------------------------------------------------------------------
+
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating design information... (UID-85)
+Warning: Design 'LightSeparator' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 49 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+clk
+PADDR[3]
+PADDR[2]
+PADDR[1]
+PADDR[0]
+PENABLE
+PSEL
+PWDATA[31]
+PWDATA[30]
+PWDATA[29]
+PWDATA[28]
+PWDATA[27]
+PWDATA[26]
+PWDATA[25]
+PWDATA[24]
+PWDATA[23]
+PWDATA[22]
+PWDATA[21]
+PWDATA[20]
+PWDATA[19]
+PWDATA[18]
+PWDATA[17]
+PWDATA[16]
+PWDATA[15]
+PWDATA[14]
+PWDATA[13]
+PWDATA[12]
+PWDATA[11]
+PWDATA[10]
+PWDATA[9]
+PWDATA[8]
+PWDATA[7]
+PWDATA[6]
+PWDATA[5]
+PWDATA[4]
+PWDATA[3]
+PWDATA[2]
+PWDATA[1]
+PWDATA[0]
+PWRITE
+rst
+ImInput[7]
+ImInput[6]
+ImInput[5]
+ImInput[4]
+ImInput[3]
+ImInput[2]
+ImInput[1]
+ImInput[0]
+ 
+****************************************
+Report : design
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:16 2016
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    gtech (File: /usr/local/synopsys/2014-15/RHELx86/SYN_2014.09-SP2/libraries/syn/gtech.db)
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : slow
+    Library : slow
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   1.62
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   tsmc18_wl50
+Location       :   slow
+Resistance     :   8.5e-08
+Capacitance    :   0.00015
+Area           :   0.7
+Slope          :   333.335
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1   333.33
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+
+Information: This design contains unmapped logic. (RPT-7)
+ 
+****************************************
+Report : clocks
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:16 2016
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+my_clk          20.00   {0 10}              d         {clk}
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : port
+        -verbose
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:16 2016
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+ImInput[0]     in      0.0000   0.0000   --      --      --         
+ImInput[1]     in      0.0000   0.0000   --      --      --         
+ImInput[2]     in      0.0000   0.0000   --      --      --         
+ImInput[3]     in      0.0000   0.0000   --      --      --         
+ImInput[4]     in      0.0000   0.0000   --      --      --         
+ImInput[5]     in      0.0000   0.0000   --      --      --         
+ImInput[6]     in      0.0000   0.0000   --      --      --         
+ImInput[7]     in      0.0000   0.0000   --      --      --         
+PADDR[0]       in      0.0000   0.0000   --      --      --         
+PADDR[1]       in      0.0000   0.0000   --      --      --         
+PADDR[2]       in      0.0000   0.0000   --      --      --         
+PADDR[3]       in      0.0000   0.0000   --      --      --         
+PENABLE        in      0.0000   0.0000   --      --      --         
+PSEL           in      0.0000   0.0000   --      --      --         
+PWDATA[0]      in      0.0000   0.0000   --      --      --         
+PWDATA[1]      in      0.0000   0.0000   --      --      --         
+PWDATA[2]      in      0.0000   0.0000   --      --      --         
+PWDATA[3]      in      0.0000   0.0000   --      --      --         
+PWDATA[4]      in      0.0000   0.0000   --      --      --         
+PWDATA[5]      in      0.0000   0.0000   --      --      --         
+PWDATA[6]      in      0.0000   0.0000   --      --      --         
+PWDATA[7]      in      0.0000   0.0000   --      --      --         
+PWDATA[8]      in      0.0000   0.0000   --      --      --         
+PWDATA[9]      in      0.0000   0.0000   --      --      --         
+PWDATA[10]     in      0.0000   0.0000   --      --      --         
+PWDATA[11]     in      0.0000   0.0000   --      --      --         
+PWDATA[12]     in      0.0000   0.0000   --      --      --         
+PWDATA[13]     in      0.0000   0.0000   --      --      --         
+PWDATA[14]     in      0.0000   0.0000   --      --      --         
+PWDATA[15]     in      0.0000   0.0000   --      --      --         
+PWDATA[16]     in      0.0000   0.0000   --      --      --         
+PWDATA[17]     in      0.0000   0.0000   --      --      --         
+PWDATA[18]     in      0.0000   0.0000   --      --      --         
+PWDATA[19]     in      0.0000   0.0000   --      --      --         
+PWDATA[20]     in      0.0000   0.0000   --      --      --         
+PWDATA[21]     in      0.0000   0.0000   --      --      --         
+PWDATA[22]     in      0.0000   0.0000   --      --      --         
+PWDATA[23]     in      0.0000   0.0000   --      --      --         
+PWDATA[24]     in      0.0000   0.0000   --      --      --         
+PWDATA[25]     in      0.0000   0.0000   --      --      --         
+PWDATA[26]     in      0.0000   0.0000   --      --      --         
+PWDATA[27]     in      0.0000   0.0000   --      --      --         
+PWDATA[28]     in      0.0000   0.0000   --      --      --         
+PWDATA[29]     in      0.0000   0.0000   --      --      --         
+PWDATA[30]     in      0.0000   0.0000   --      --      --         
+PWDATA[31]     in      0.0000   0.0000   --      --      --         
+PWRITE         in      0.0000   0.0000   --      --      --         
+clk            in      0.0000   0.0000   --      --      --         d
+rst            in      0.0000   0.0000   --      --      --         
+ImOutput[0]    out     0.0000   0.0000   --      --      --         
+ImOutput[1]    out     0.0000   0.0000   --      --      --         
+ImOutput[2]    out     0.0000   0.0000   --      --      --         
+ImOutput[3]    out     0.0000   0.0000   --      --      --         
+ImOutput[4]    out     0.0000   0.0000   --      --      --         
+ImOutput[5]    out     0.0000   0.0000   --      --      --         
+ImOutput[6]    out     0.0000   0.0000   --      --      --         
+ImOutput[7]    out     0.0000   0.0000   --      --      --         
+PRDATA[0]      out     0.0000   0.0000   --      --      --         
+PRDATA[1]      out     0.0000   0.0000   --      --      --         
+PRDATA[2]      out     0.0000   0.0000   --      --      --         
+PRDATA[3]      out     0.0000   0.0000   --      --      --         
+PRDATA[4]      out     0.0000   0.0000   --      --      --         
+PRDATA[5]      out     0.0000   0.0000   --      --      --         
+PRDATA[6]      out     0.0000   0.0000   --      --      --         
+PRDATA[7]      out     0.0000   0.0000   --      --      --         
+PRDATA[8]      out     0.0000   0.0000   --      --      --         
+PRDATA[9]      out     0.0000   0.0000   --      --      --         
+PRDATA[10]     out     0.0000   0.0000   --      --      --         
+PRDATA[11]     out     0.0000   0.0000   --      --      --         
+PRDATA[12]     out     0.0000   0.0000   --      --      --         
+PRDATA[13]     out     0.0000   0.0000   --      --      --         
+PRDATA[14]     out     0.0000   0.0000   --      --      --         
+PRDATA[15]     out     0.0000   0.0000   --      --      --         
+PRDATA[16]     out     0.0000   0.0000   --      --      --         
+PRDATA[17]     out     0.0000   0.0000   --      --      --         
+PRDATA[18]     out     0.0000   0.0000   --      --      --         
+PRDATA[19]     out     0.0000   0.0000   --      --      --         
+PRDATA[20]     out     0.0000   0.0000   --      --      --         
+PRDATA[21]     out     0.0000   0.0000   --      --      --         
+PRDATA[22]     out     0.0000   0.0000   --      --      --         
+PRDATA[23]     out     0.0000   0.0000   --      --      --         
+PRDATA[24]     out     0.0000   0.0000   --      --      --         
+PRDATA[25]     out     0.0000   0.0000   --      --      --         
+PRDATA[26]     out     0.0000   0.0000   --      --      --         
+PRDATA[27]     out     0.0000   0.0000   --      --      --         
+PRDATA[28]     out     0.0000   0.0000   --      --      --         
+PRDATA[29]     out     0.0000   0.0000   --      --      --         
+PRDATA[30]     out     0.0000   0.0000   --      --      --         
+PRDATA[31]     out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+ImInput[0]         1      --              --              --        -- 
+ImInput[1]         1      --              --              --        -- 
+ImInput[2]         1      --              --              --        -- 
+ImInput[3]         1      --              --              --        -- 
+ImInput[4]         1      --              --              --        -- 
+ImInput[5]         1      --              --              --        -- 
+ImInput[6]         1      --              --              --        -- 
+ImInput[7]         1      --              --              --        -- 
+PADDR[0]           1      --              --              --        -- 
+PADDR[1]           1      --              --              --        -- 
+PADDR[2]           1      --              --              --        -- 
+PADDR[3]           1      --              --              --        -- 
+PENABLE            1      --              --              --        -- 
+PSEL               1      --              --              --        -- 
+PWDATA[0]          1      --              --              --        -- 
+PWDATA[1]          1      --              --              --        -- 
+PWDATA[2]          1      --              --              --        -- 
+PWDATA[3]          1      --              --              --        -- 
+PWDATA[4]          1      --              --              --        -- 
+PWDATA[5]          1      --              --              --        -- 
+PWDATA[6]          1      --              --              --        -- 
+PWDATA[7]          1      --              --              --        -- 
+PWDATA[8]          1      --              --              --        -- 
+PWDATA[9]          1      --              --              --        -- 
+PWDATA[10]         1      --              --              --        -- 
+PWDATA[11]         1      --              --              --        -- 
+PWDATA[12]         1      --              --              --        -- 
+PWDATA[13]         1      --              --              --        -- 
+PWDATA[14]         1      --              --              --        -- 
+PWDATA[15]         1      --              --              --        -- 
+PWDATA[16]         1      --              --              --        -- 
+PWDATA[17]         1      --              --              --        -- 
+PWDATA[18]         1      --              --              --        -- 
+PWDATA[19]         1      --              --              --        -- 
+PWDATA[20]         1      --              --              --        -- 
+PWDATA[21]         1      --              --              --        -- 
+PWDATA[22]         1      --              --              --        -- 
+PWDATA[23]         1      --              --              --        -- 
+PWDATA[24]         1      --              --              --        -- 
+PWDATA[25]         1      --              --              --        -- 
+PWDATA[26]         1      --              --              --        -- 
+PWDATA[27]         1      --              --              --        -- 
+PWDATA[28]         1      --              --              --        -- 
+PWDATA[29]         1      --              --              --        -- 
+PWDATA[30]         1      --              --              --        -- 
+PWDATA[31]         1      --              --              --        -- 
+PWRITE             1      --              --              --        -- 
+clk                1      --              --              --        -- 
+rst                1      --              --              --        -- 
+ImOutput[0]        1      --              --              --        -- 
+ImOutput[1]        1      --              --              --        -- 
+ImOutput[2]        1      --              --              --        -- 
+ImOutput[3]        1      --              --              --        -- 
+ImOutput[4]        1      --              --              --        -- 
+ImOutput[5]        1      --              --              --        -- 
+ImOutput[6]        1      --              --              --        -- 
+ImOutput[7]        1      --              --              --        -- 
+PRDATA[0]          1      --              --              --        -- 
+PRDATA[1]          1      --              --              --        -- 
+PRDATA[2]          1      --              --              --        -- 
+PRDATA[3]          1      --              --              --        -- 
+PRDATA[4]          1      --              --              --        -- 
+PRDATA[5]          1      --              --              --        -- 
+PRDATA[6]          1      --              --              --        -- 
+PRDATA[7]          1      --              --              --        -- 
+PRDATA[8]          1      --              --              --        -- 
+PRDATA[9]          1      --              --              --        -- 
+PRDATA[10]         1      --              --              --        -- 
+PRDATA[11]         1      --              --              --        -- 
+PRDATA[12]         1      --              --              --        -- 
+PRDATA[13]         1      --              --              --        -- 
+PRDATA[14]         1      --              --              --        -- 
+PRDATA[15]         1      --              --              --        -- 
+PRDATA[16]         1      --              --              --        -- 
+PRDATA[17]         1      --              --              --        -- 
+PRDATA[18]         1      --              --              --        -- 
+PRDATA[19]         1      --              --              --        -- 
+PRDATA[20]         1      --              --              --        -- 
+PRDATA[21]         1      --              --              --        -- 
+PRDATA[22]         1      --              --              --        -- 
+PRDATA[23]         1      --              --              --        -- 
+PRDATA[24]         1      --              --              --        -- 
+PRDATA[25]         1      --              --              --        -- 
+PRDATA[26]         1      --              --              --        -- 
+PRDATA[27]         1      --              --              --        -- 
+PRDATA[28]         1      --              --              --        -- 
+PRDATA[29]         1      --              --              --        -- 
+PRDATA[30]         1      --              --              --        -- 
+PRDATA[31]         1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+ImInput[0]    --      --      2.50    2.50  my_clk    --    
+ImInput[1]    --      --      2.50    2.50  my_clk    --    
+ImInput[2]    --      --      2.50    2.50  my_clk    --    
+ImInput[3]    --      --      2.50    2.50  my_clk    --    
+ImInput[4]    --      --      2.50    2.50  my_clk    --    
+ImInput[5]    --      --      2.50    2.50  my_clk    --    
+ImInput[6]    --      --      2.50    2.50  my_clk    --    
+ImInput[7]    --      --      2.50    2.50  my_clk    --    
+PADDR[0]      --      --      2.50    2.50  my_clk    --    
+PADDR[1]      --      --      2.50    2.50  my_clk    --    
+PADDR[2]      --      --      2.50    2.50  my_clk    --    
+PADDR[3]      --      --      2.50    2.50  my_clk    --    
+PENABLE       --      --      2.50    2.50  my_clk    --    
+PSEL          --      --      2.50    2.50  my_clk    --    
+PWDATA[0]     --      --      2.50    2.50  my_clk    --    
+PWDATA[1]     --      --      2.50    2.50  my_clk    --    
+PWDATA[2]     --      --      2.50    2.50  my_clk    --    
+PWDATA[3]     --      --      2.50    2.50  my_clk    --    
+PWDATA[4]     --      --      2.50    2.50  my_clk    --    
+PWDATA[5]     --      --      2.50    2.50  my_clk    --    
+PWDATA[6]     --      --      2.50    2.50  my_clk    --    
+PWDATA[7]     --      --      2.50    2.50  my_clk    --    
+PWDATA[8]     --      --      2.50    2.50  my_clk    --    
+PWDATA[9]     --      --      2.50    2.50  my_clk    --    
+PWDATA[10]    --      --      2.50    2.50  my_clk    --    
+PWDATA[11]    --      --      2.50    2.50  my_clk    --    
+PWDATA[12]    --      --      2.50    2.50  my_clk    --    
+PWDATA[13]    --      --      2.50    2.50  my_clk    --    
+PWDATA[14]    --      --      2.50    2.50  my_clk    --    
+PWDATA[15]    --      --      2.50    2.50  my_clk    --    
+PWDATA[16]    --      --      2.50    2.50  my_clk    --    
+PWDATA[17]    --      --      2.50    2.50  my_clk    --    
+PWDATA[18]    --      --      2.50    2.50  my_clk    --    
+PWDATA[19]    --      --      2.50    2.50  my_clk    --    
+PWDATA[20]    --      --      2.50    2.50  my_clk    --    
+PWDATA[21]    --      --      2.50    2.50  my_clk    --    
+PWDATA[22]    --      --      2.50    2.50  my_clk    --    
+PWDATA[23]    --      --      2.50    2.50  my_clk    --    
+PWDATA[24]    --      --      2.50    2.50  my_clk    --    
+PWDATA[25]    --      --      2.50    2.50  my_clk    --    
+PWDATA[26]    --      --      2.50    2.50  my_clk    --    
+PWDATA[27]    --      --      2.50    2.50  my_clk    --    
+PWDATA[28]    --      --      2.50    2.50  my_clk    --    
+PWDATA[29]    --      --      2.50    2.50  my_clk    --    
+PWDATA[30]    --      --      2.50    2.50  my_clk    --    
+PWDATA[31]    --      --      2.50    2.50  my_clk    --    
+PWRITE        --      --      2.50    2.50  my_clk    --    
+clk           --      --      2.50    2.50  my_clk    --    
+rst           --      --      2.50    2.50  my_clk    --    
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+ImInput[0]    --      --     --      --     --      --     --     --        -- 
+ImInput[1]    --      --     --      --     --      --     --     --        -- 
+ImInput[2]    --      --     --      --     --      --     --     --        -- 
+ImInput[3]    --      --     --      --     --      --     --     --        -- 
+ImInput[4]    --      --     --      --     --      --     --     --        -- 
+ImInput[5]    --      --     --      --     --      --     --     --        -- 
+ImInput[6]    --      --     --      --     --      --     --     --        -- 
+ImInput[7]    --      --     --      --     --      --     --     --        -- 
+PADDR[0]      --      --     --      --     --      --     --     --        -- 
+PADDR[1]      --      --     --      --     --      --     --     --        -- 
+PADDR[2]      --      --     --      --     --      --     --     --        -- 
+PADDR[3]      --      --     --      --     --      --     --     --        -- 
+PENABLE       --      --     --      --     --      --     --     --        -- 
+PSEL          --      --     --      --     --      --     --     --        -- 
+PWDATA[0]     --      --     --      --     --      --     --     --        -- 
+PWDATA[1]     --      --     --      --     --      --     --     --        -- 
+PWDATA[2]     --      --     --      --     --      --     --     --        -- 
+PWDATA[3]     --      --     --      --     --      --     --     --        -- 
+PWDATA[4]     --      --     --      --     --      --     --     --        -- 
+PWDATA[5]     --      --     --      --     --      --     --     --        -- 
+PWDATA[6]     --      --     --      --     --      --     --     --        -- 
+PWDATA[7]     --      --     --      --     --      --     --     --        -- 
+PWDATA[8]     --      --     --      --     --      --     --     --        -- 
+PWDATA[9]     --      --     --      --     --      --     --     --        -- 
+PWDATA[10]    --      --     --      --     --      --     --     --        -- 
+PWDATA[11]    --      --     --      --     --      --     --     --        -- 
+PWDATA[12]    --      --     --      --     --      --     --     --        -- 
+PWDATA[13]    --      --     --      --     --      --     --     --        -- 
+PWDATA[14]    --      --     --      --     --      --     --     --        -- 
+PWDATA[15]    --      --     --      --     --      --     --     --        -- 
+PWDATA[16]    --      --     --      --     --      --     --     --        -- 
+PWDATA[17]    --      --     --      --     --      --     --     --        -- 
+PWDATA[18]    --      --     --      --     --      --     --     --        -- 
+PWDATA[19]    --      --     --      --     --      --     --     --        -- 
+PWDATA[20]    --      --     --      --     --      --     --     --        -- 
+PWDATA[21]    --      --     --      --     --      --     --     --        -- 
+PWDATA[22]    --      --     --      --     --      --     --     --        -- 
+PWDATA[23]    --      --     --      --     --      --     --     --        -- 
+PWDATA[24]    --      --     --      --     --      --     --     --        -- 
+PWDATA[25]    --      --     --      --     --      --     --     --        -- 
+PWDATA[26]    --      --     --      --     --      --     --     --        -- 
+PWDATA[27]    --      --     --      --     --      --     --     --        -- 
+PWDATA[28]    --      --     --      --     --      --     --     --        -- 
+PWDATA[29]    --      --     --      --     --      --     --     --        -- 
+PWDATA[30]    --      --     --      --     --      --     --     --        -- 
+PWDATA[31]    --      --     --      --     --      --     --     --        -- 
+PWRITE        --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+rst           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+ImInput[0]    0.10    0.10    0.10    0.10
+ImInput[1]    0.10    0.10    0.10    0.10
+ImInput[2]    0.10    0.10    0.10    0.10
+ImInput[3]    0.10    0.10    0.10    0.10
+ImInput[4]    0.10    0.10    0.10    0.10
+ImInput[5]    0.10    0.10    0.10    0.10
+ImInput[6]    0.10    0.10    0.10    0.10
+ImInput[7]    0.10    0.10    0.10    0.10
+PADDR[0]      0.10    0.10    0.10    0.10
+PADDR[1]      0.10    0.10    0.10    0.10
+PADDR[2]      0.10    0.10    0.10    0.10
+PADDR[3]      0.10    0.10    0.10    0.10
+PENABLE       0.10    0.10    0.10    0.10
+PSEL          0.10    0.10    0.10    0.10
+PWDATA[0]     0.10    0.10    0.10    0.10
+PWDATA[1]     0.10    0.10    0.10    0.10
+PWDATA[2]     0.10    0.10    0.10    0.10
+PWDATA[3]     0.10    0.10    0.10    0.10
+PWDATA[4]     0.10    0.10    0.10    0.10
+PWDATA[5]     0.10    0.10    0.10    0.10
+PWDATA[6]     0.10    0.10    0.10    0.10
+PWDATA[7]     0.10    0.10    0.10    0.10
+PWDATA[8]     0.10    0.10    0.10    0.10
+PWDATA[9]     0.10    0.10    0.10    0.10
+PWDATA[10]    0.10    0.10    0.10    0.10
+PWDATA[11]    0.10    0.10    0.10    0.10
+PWDATA[12]    0.10    0.10    0.10    0.10
+PWDATA[13]    0.10    0.10    0.10    0.10
+PWDATA[14]    0.10    0.10    0.10    0.10
+PWDATA[15]    0.10    0.10    0.10    0.10
+PWDATA[16]    0.10    0.10    0.10    0.10
+PWDATA[17]    0.10    0.10    0.10    0.10
+PWDATA[18]    0.10    0.10    0.10    0.10
+PWDATA[19]    0.10    0.10    0.10    0.10
+PWDATA[20]    0.10    0.10    0.10    0.10
+PWDATA[21]    0.10    0.10    0.10    0.10
+PWDATA[22]    0.10    0.10    0.10    0.10
+PWDATA[23]    0.10    0.10    0.10    0.10
+PWDATA[24]    0.10    0.10    0.10    0.10
+PWDATA[25]    0.10    0.10    0.10    0.10
+PWDATA[26]    0.10    0.10    0.10    0.10
+PWDATA[27]    0.10    0.10    0.10    0.10
+PWDATA[28]    0.10    0.10    0.10    0.10
+PWDATA[29]    0.10    0.10    0.10    0.10
+PWDATA[30]    0.10    0.10    0.10    0.10
+PWDATA[31]    0.10    0.10    0.10    0.10
+PWRITE        0.10    0.10    0.10    0.10
+clk           0.10    0.10    0.10    0.10
+rst           0.10    0.10    0.10    0.10
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+ImOutput[0]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[1]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[2]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[3]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[4]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[5]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[6]   --      --      1.00    1.00  my_clk    0.00  
+ImOutput[7]   --      --      1.00    1.00  my_clk    0.00  
+PRDATA[0]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[1]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[2]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[3]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[4]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[5]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[6]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[7]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[8]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[9]     --      --      1.00    1.00  my_clk    0.00  
+PRDATA[10]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[11]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[12]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[13]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[14]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[15]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[16]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[17]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[18]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[19]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[20]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[21]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[22]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[23]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[24]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[25]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[26]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[27]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[28]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[29]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[30]    --      --      1.00    1.00  my_clk    0.00  
+PRDATA[31]    --      --      1.00    1.00  my_clk    0.00  
+
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | J-2014.09-DWBB_201409.2 |     *     |
+| Licensed DW Building Blocks        | J-2014.09-DWBB_201409.2 |     *     |
+============================================================================
+
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'SNPS_CLOCK_GATE_HIGH_LightSeparator_0'
+  Processing 'LightSeparator'
+Information: The register 'k_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'k_reg[1]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'LightSeparator_DW01_inc_0'
+  Processing 'LightSeparator_DW01_sub_0'
+  Processing 'LightSeparator_DW01_add_0'
+  Mapping 'LightSeparator_DW_mult_uns_0'
+  Processing 'LightSeparator_DW01_add_1'
+  Mapping 'LightSeparator_DW_mult_uns_1'
+  Processing 'LightSeparator_DW01_sub_1'
+  Mapping 'LightSeparator_DW_mult_uns_2'
+  Processing 'LightSeparator_DW01_add_2'
+  Mapping 'LightSeparator_DW_mult_uns_3'
+  Processing 'LightSeparator_DW01_sub_2'
+  Mapping 'LightSeparator_DW_mult_uns_4'
+  Processing 'LightSeparator_DW01_add_3'
+  Mapping 'LightSeparator_DW_mult_uns_5'
+  Processing 'LightSeparator_DW01_sub_3'
+  Mapping 'LightSeparator_DW_mult_uns_6'
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_1_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_12_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_MUX_OP_8_3_1_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_LightSeparator_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_inc_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_add_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW01_sub_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design LightSeparator_DW_mult_uns_6, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design LightSeparator. (PWR-730)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05 1993131.0      0.00       0.0       1.1                          
+    0:00:05 1993131.0      0.00       0.0       1.1                          
+    0:00:05 1993131.0      0.00       0.0       1.1                          
+    0:00:05 1993131.0      0.00       0.0       1.1                          
+    0:00:05 1993131.0      0.00       0.0       1.1                          
+    0:00:06 1938863.5      7.20      47.1       0.0                          
+    0:00:07 1940943.0      4.27      27.4       0.0                          
+    0:00:07 1941293.8      4.22      28.2       0.0                          
+    0:00:07 1942593.0      4.09      27.6       0.0                          
+    0:00:07 1942260.4      3.99      26.5       0.0                          
+    0:00:07 1942680.0      3.86      24.8       0.0                          
+    0:00:08 1942620.1      3.73      23.2       0.0                          
+    0:00:08 1942920.0      3.82      25.6       0.0                          
+    0:00:08 1942883.4      3.75      23.4       0.0                          
+    0:00:08 1942643.4      3.67      22.8       0.0                          
+    0:00:08 1942676.6      3.57      22.7       0.0                          
+    0:00:08 1942786.4      3.55      21.2       0.0                          
+    0:00:08 1943139.5      3.44      20.8       0.0                          
+    0:00:09 1943902.2      3.28      20.0       0.0                          
+    0:00:09 1944138.4      3.00      18.0       0.0                          
+    0:00:09 1945424.3      2.86      16.5       0.0                          
+    0:00:09 1947013.5      2.72      16.0       0.0                          
+    0:00:09 1948242.8      2.63      15.5       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:09 1948605.4      2.41      14.4       0.0                          
+    0:00:11 1967132.8      0.62       2.2       0.0 picStore_reg[0][0][22]/D 
+    0:00:11 1951488.0      0.14       0.3       0.0 picStore_reg[0][0][22]/D 
+    0:00:11 1955401.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11 1955401.0      0.00       0.0       0.0                          
+    0:00:11 1955401.0      0.00       0.0       0.0                          
+    0:00:11 1954814.1      0.00       0.0       0.0                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11 1954814.1      0.00       0.0       0.0                          
+    0:00:11 1954814.1      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11 1954814.1      0.00       0.0       0.0                          
+    0:00:11 1954814.1      0.00       0.0       0.0                          
+    0:00:11 1947978.5      0.02       0.0       0.0                          
+    0:00:12 1944525.6      0.12       0.2       0.0                          
+    0:00:12 1941182.9      0.04       0.0       0.0                          
+    0:00:12 1938453.2      0.02       0.0       0.0                          
+    0:00:12 1936720.0      0.02       0.0       0.0                          
+    0:00:12 1936720.0      0.02       0.0       0.0                          
+    0:00:12 1936716.7      0.00       0.0       0.0                          
+    0:00:12 1934727.5      1.04       4.0       0.0                          
+    0:00:12 1934278.5      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:12 1934202.0      1.04       4.0       0.0                          
+    0:00:13 1935749.7      0.23       0.6       0.0 picStore_reg[0][0][23]/D 
+    0:00:13 1935112.9      0.00       0.0       0.0                          
+    0:00:13 1931530.2      0.00       0.0       0.0                          
+    0:00:13 1931530.2      0.00       0.0       0.0                          
+    0:00:14 1930635.4      0.42       1.4       0.0                          
+    0:00:14 1930372.6      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930352.7      0.42       1.4       0.0                          
+    0:00:14 1930618.8      0.00       0.0       0.0                          
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Loading db file '/users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:31 2016
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LightSeparator         tsmc18_wl50       slow
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 209.4234 uW   (28%)
+  Net Switching Power  = 545.5914 uW   (72%)
+                         ---------
+Total Dynamic Power    = 755.0148 uW  (100%)
+
+Cell Leakage Power     =   4.9294 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  3.1670e-02            0.2013        3.4661e+04            0.2330  (  30.66%)
+register           0.1722        3.0094e-03        8.3995e+05            0.1761  (  23.17%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.5097e-03            0.3413        4.0548e+06            0.3509  (  46.17%)
+--------------------------------------------------------------------------------------------------
+Total              0.2094 mW         0.5456 mW     4.9294e+06 pW         0.7599 mW
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:31 2016
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   LightSeparator               0.00       1930618.75     -1930618.75
+                                                                    (VIOLATED)
+
+
+ 
+****************************************
+Report : area
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:31 2016
+****************************************
+
+Library(s) Used:
+
+    slow (File: /users/agnon/year2011/eyarg/part3/LibraryFiles/db/slow.db)
+
+Number of ports:                           89
+Number of nets:                          1587
+Number of cells:                         1200
+Number of combinational cells:            807
+Number of sequential cells:               364
+Number of macros/black boxes:               0
+Number of buf/inv:                        143
+Number of references:                      95
+
+Combinational area:              82617.798059
+Buf/Inv area:                     5278.996898
+Noncombinational area:           27991.655891
+Macro/Black Box area:                0.000000
+Net Interconnect area:         1820009.340881
+
+Total cell area:                110609.453950
+Total area:                    1930618.794831
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LightSeparator
+Version: J-2014.09-SP2
+Date   : Thu Jan  7 11:38:32 2016
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: PADDR[1] (input port clocked by my_clk)
+  Endpoint: clk_gate_BankRegister_reg[0]/latch
+            (negative level-sensitive latch clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LightSeparator     tsmc18_wl50           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clk (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.30       0.30
+  input external delay                                    2.50       2.80 f
+  PADDR[1] (in)                                           0.00       2.80 f
+  U1067/Y (INVX1)                                         1.81       4.61 r
+  U861/Y (NAND3X1)                                        1.55       6.16 f
+  U1059/Y (NOR2X1)                                        2.14       8.31 r
+  U860/Y (NOR3X1)                                         1.06       9.37 f
+  U1058/Y (NAND2BX2)                                      1.63      11.00 r
+  U871/Y (NOR2BX1)                                        0.63      11.63 f
+  clk_gate_BankRegister_reg[0]/EN (SNPS_CLOCK_GATE_HIGH_LightSeparator_7)
+                                                          0.00      11.63 f
+  clk_gate_BankRegister_reg[0]/latch/D (TLATNX1)          0.00      11.63 f
+  data arrival time                                                 11.63
+
+  clock my_clk (fall edge)                               10.00      10.00
+  clock network delay (ideal)                             0.30      10.30
+  clock uncertainty                                      -0.60       9.70
+  clk_gate_BankRegister_reg[0]/latch/GN (TLATNX1)         0.00       9.70 f
+  time borrowed from endpoint                             1.93      11.63
+  data required time                                                11.63
+  --------------------------------------------------------------------------
+  data required time                                                11.63
+  data arrival time                                                -11.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  my_clk nominal pulse width                             10.00   
+  library setup time                                     -0.16   
+  --------------------------------------------------------------
+  max time borrow                                         9.84   
+  --------------------------------------------------------------
+  actual time borrow                                      1.93   
+  clock uncertainty                                      -0.60   
+  --------------------------------------------------------------
+  time given to startpoint                                1.33   
+  --------------------------------------------------------------
+
+
+Writing ddc file 'mapped/LightSeparator.ddc'.
+Writing verilog file '/users/agnon/year2011/eyarg/part3/synthesis/mapped/LightSeparator_GLV.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/users/agnon/year2011/eyarg/part3/synthesis/mapped/LightSeparator.sdf'. (WT-3)
+1
+Current design is 'LightSeparator'.
+design_vision> 
